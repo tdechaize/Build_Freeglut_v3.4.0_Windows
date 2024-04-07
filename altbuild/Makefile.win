@@ -1,0 +1,145 @@
+# Project: freeglut
+# Makefile created by Dev-C++ 6.7.5
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = ../src/fg_callbacks.o ../src/mswin/fg_cmap_mswin.o ../src/fg_cursor.o ../src/mswin/fg_cursor_mswin.o ../src/fg_display.o ../src/mswin/fg_display_mswin.o ../src/fg_ext.o ../src/mswin/fg_ext_mswin.o ../src/fg_font.o ../src/fg_font_data.o ../src/fg_gamemode.o ../src/mswin/fg_gamemode_mswin.o ../src/fg_geometry.o ../src/fg_gl2.o ../src/fg_init.o ../src/mswin/fg_init_mswin.o ../src/fg_input_devices.o ../src/mswin/fg_input_devices_mswin.o ../src/fg_joystick.o ../src/mswin/fg_joystick_mswin.o ../src/fg_main.o ../src/mswin/fg_main_mswin.o ../src/fg_menu.o ../src/mswin/fg_menu_mswin.o ../src/fg_misc.o ../src/fg_overlay.o ../src/fg_spaceball.o ../src/mswin/fg_spaceball_mswin.o ../src/fg_state.o ../src/mswin/fg_state_mswin.o ../src/fg_stroke_mono_roman.o ../src/fg_stroke_roman.o ../src/fg_structure.o ../src/mswin/fg_structure_mswin.o ../src/fg_teapot.o ../src/fg_videoresize.o ../src/fg_window.o ../src/mswin/fg_window_mswin.o ../src/util/xparsegeometry_repl.o
+LINKOBJ  = ../src/fg_callbacks.o ../src/mswin/fg_cmap_mswin.o ../src/fg_cursor.o ../src/mswin/fg_cursor_mswin.o ../src/fg_display.o ../src/mswin/fg_display_mswin.o ../src/fg_ext.o ../src/mswin/fg_ext_mswin.o ../src/fg_font.o ../src/fg_font_data.o ../src/fg_gamemode.o ../src/mswin/fg_gamemode_mswin.o ../src/fg_geometry.o ../src/fg_gl2.o ../src/fg_init.o ../src/mswin/fg_init_mswin.o ../src/fg_input_devices.o ../src/mswin/fg_input_devices_mswin.o ../src/fg_joystick.o ../src/mswin/fg_joystick_mswin.o ../src/fg_main.o ../src/mswin/fg_main_mswin.o ../src/fg_menu.o ../src/mswin/fg_menu_mswin.o ../src/fg_misc.o ../src/fg_overlay.o ../src/fg_spaceball.o ../src/mswin/fg_spaceball_mswin.o ../src/fg_state.o ../src/mswin/fg_state_mswin.o ../src/fg_stroke_mono_roman.o ../src/fg_stroke_roman.o ../src/fg_structure.o ../src/mswin/fg_structure_mswin.o ../src/fg_teapot.o ../src/fg_videoresize.o ../src/fg_window.o ../src/mswin/fg_window_mswin.o ../src/util/xparsegeometry_repl.o
+LIBS     = -L"C:/RedPanda-Cpp/MinGW64/lib" -L"C:/RedPanda-Cpp/MinGW64/x86_64-w64-mingw32/lib" -g3 -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 -lglu32 -lopengl32 -lwinmm -static
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/10.3.0/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"/mingw64/include" -I".." -I"../include" -I"C:/RedPanda-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include/c++/10.3.0" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include/c++/10.3.0/x86_64-w64-mingw32" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include/c++/10.3.0/backward" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/10.3.0/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"/mingw64/include" -I".." -I"../include" -I"C:/RedPanda-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = freeglut.dll
+CXXFLAGS = $(CXXINCS) -Wall -Wextra -g3 -D__GNUWIN32__ -W -DNDEBUG -DWIN32 -D_WINDOWS -D_MBCS -D_USRDLL -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -D_WIN32_WINNT=0x0500 -DWINVER=0x0500
+ENCODINGS = -finput-charset=utf-8 -fexec-charset=windows-1252
+CFLAGS   = $(INCS) -Wall -Wextra -g3 -D__GNUWIN32__ -W -DNDEBUG -DWIN32 -D_WINDOWS -D_MBCS -D_USRDLL -DFREEGLUT_EXPORTS -DHAVE_CONFIG_H -D_WIN32_WINNT=0x0500 -DWINVER=0x0500
+RM       = del /q /f
+DEF      = libfreeglut.def
+STATIC   = libfreeglut.a
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN) $(DEF) $(STATIC)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) -mdll $(LINKOBJ) -o "$(BIN)" $(LIBS) -Wl,--output-def,$(DEF),--out-implib,$(STATIC)
+
+../src/fg_callbacks.o: ../src/fg_callbacks.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_callbacks.c -o ../src/fg_callbacks.o $(CFLAGS) 
+
+../src/mswin/fg_cmap_mswin.o: ../src/mswin/fg_cmap_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_cmap_mswin.c -o ../src/mswin/fg_cmap_mswin.o $(CFLAGS) 
+
+../src/fg_cursor.o: ../src/fg_cursor.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_cursor.c -o ../src/fg_cursor.o $(CFLAGS) 
+
+../src/mswin/fg_cursor_mswin.o: ../src/mswin/fg_cursor_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_cursor_mswin.c -o ../src/mswin/fg_cursor_mswin.o $(CFLAGS) 
+
+../src/fg_display.o: ../src/fg_display.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_display.c -o ../src/fg_display.o $(CFLAGS) 
+
+../src/mswin/fg_display_mswin.o: ../src/mswin/fg_display_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_display_mswin.c -o ../src/mswin/fg_display_mswin.o $(CFLAGS) 
+
+../src/fg_ext.o: ../src/fg_ext.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_ext.c -o ../src/fg_ext.o $(CFLAGS) 
+
+../src/mswin/fg_ext_mswin.o: ../src/mswin/fg_ext_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_ext_mswin.c -o ../src/mswin/fg_ext_mswin.o $(CFLAGS) 
+
+../src/fg_font.o: ../src/fg_font.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_font.c -o ../src/fg_font.o $(CFLAGS) 
+
+../src/fg_font_data.o: ../src/fg_font_data.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_font_data.c -o ../src/fg_font_data.o $(CFLAGS) 
+
+../src/fg_gamemode.o: ../src/fg_gamemode.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_gamemode.c -o ../src/fg_gamemode.o $(CFLAGS) 
+
+../src/mswin/fg_gamemode_mswin.o: ../src/mswin/fg_gamemode_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_gamemode_mswin.c -o ../src/mswin/fg_gamemode_mswin.o $(CFLAGS) 
+
+../src/fg_geometry.o: ../src/fg_geometry.c ../src/fg_callback_macros.h ../src/fg_gl2.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_geometry.c -o ../src/fg_geometry.o $(CFLAGS) 
+
+../src/fg_gl2.o: ../src/fg_gl2.c ../src/fg_callback_macros.h ../src/fg_gl2.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_gl2.c -o ../src/fg_gl2.o $(CFLAGS) 
+
+../src/fg_init.o: ../src/fg_init.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h ../src/util/xparsegeometry_repl.h
+	$(CC) -c ../src/fg_init.c -o ../src/fg_init.o $(CFLAGS) 
+
+../src/mswin/fg_init_mswin.o: ../src/mswin/fg_init_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_init_mswin.c -o ../src/mswin/fg_init_mswin.o $(CFLAGS) 
+
+../src/fg_input_devices.o: ../src/fg_input_devices.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_input_devices.c -o ../src/fg_input_devices.o $(CFLAGS) 
+
+../src/mswin/fg_input_devices_mswin.o: ../src/mswin/fg_input_devices_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_input_devices_mswin.c -o ../src/mswin/fg_input_devices_mswin.o $(CFLAGS) 
+
+../src/fg_joystick.o: ../src/fg_joystick.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_joystick.c -o ../src/fg_joystick.o $(CFLAGS) 
+
+../src/mswin/fg_joystick_mswin.o: ../src/mswin/fg_joystick_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_joystick_mswin.c -o ../src/mswin/fg_joystick_mswin.o $(CFLAGS) 
+
+../src/fg_main.o: ../src/fg_main.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_main.c -o ../src/fg_main.o $(CFLAGS) 
+
+../src/mswin/fg_main_mswin.o: ../src/mswin/fg_main_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_main_mswin.c -o ../src/mswin/fg_main_mswin.o $(CFLAGS) 
+
+../src/fg_menu.o: ../src/fg_menu.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_menu.c -o ../src/fg_menu.o $(CFLAGS) 
+
+../src/mswin/fg_menu_mswin.o: ../src/mswin/fg_menu_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_menu_mswin.c -o ../src/mswin/fg_menu_mswin.o $(CFLAGS) 
+
+../src/fg_misc.o: ../src/fg_misc.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_misc.c -o ../src/fg_misc.o $(CFLAGS) 
+
+../src/fg_overlay.o: ../src/fg_overlay.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_overlay.c -o ../src/fg_overlay.o $(CFLAGS) 
+
+../src/fg_spaceball.o: ../src/fg_spaceball.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_spaceball.c -o ../src/fg_spaceball.o $(CFLAGS) 
+
+../src/mswin/fg_spaceball_mswin.o: ../src/mswin/fg_spaceball_mswin.c
+	$(CC) -c ../src/mswin/fg_spaceball_mswin.c -o ../src/mswin/fg_spaceball_mswin.o $(CFLAGS) 
+
+../src/fg_state.o: ../src/fg_state.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_state.c -o ../src/fg_state.o $(CFLAGS) 
+
+../src/mswin/fg_state_mswin.o: ../src/mswin/fg_state_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_state_mswin.c -o ../src/mswin/fg_state_mswin.o $(CFLAGS) 
+
+../src/fg_stroke_mono_roman.o: ../src/fg_stroke_mono_roman.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_stroke_mono_roman.c -o ../src/fg_stroke_mono_roman.o $(CFLAGS) 
+
+../src/fg_stroke_roman.o: ../src/fg_stroke_roman.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_stroke_roman.c -o ../src/fg_stroke_roman.o $(CFLAGS) 
+
+../src/fg_structure.o: ../src/fg_structure.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_structure.c -o ../src/fg_structure.o $(CFLAGS) 
+
+../src/mswin/fg_structure_mswin.o: ../src/mswin/fg_structure_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_structure_mswin.c -o ../src/mswin/fg_structure_mswin.o $(CFLAGS) 
+
+../src/fg_teapot.o: ../src/fg_teapot.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_teapot_data.h ../src/fg_version.h
+	$(CC) -c ../src/fg_teapot.c -o ../src/fg_teapot.o $(CFLAGS) 
+
+../src/fg_videoresize.o: ../src/fg_videoresize.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_videoresize.c -o ../src/fg_videoresize.o $(CFLAGS) 
+
+../src/fg_window.o: ../src/fg_window.c ../src/fg_callback_macros.h ../src/fg_gl2.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/fg_window.c -o ../src/fg_window.o $(CFLAGS) 
+
+../src/mswin/fg_window_mswin.o: ../src/mswin/fg_window_mswin.c ../src/fg_callback_macros.h ../src/fg_internal.h ../src/fg_version.h
+	$(CC) -c ../src/mswin/fg_window_mswin.c -o ../src/mswin/fg_window_mswin.o $(CFLAGS) 
+
+../src/util/xparsegeometry_repl.o: ../src/util/xparsegeometry_repl.c ../src/util/xparsegeometry_repl.h
+	$(CC) -c ../src/util/xparsegeometry_repl.c -o ../src/util/xparsegeometry_repl.o $(CFLAGS) 
