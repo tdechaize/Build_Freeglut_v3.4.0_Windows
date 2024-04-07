@@ -1,0 +1,3 @@
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_window_mswin.c(188): Warning! W303: Parameter 'hdc' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_window_mswin.c(496): Warning! W303: Parameter 'hdc' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_window_mswin.c(497): Warning! W303: Parameter 'rect' has been defined, but not referenced

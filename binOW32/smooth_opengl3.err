@@ -1,0 +1,3 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\smooth_opengl3\smooth_opengl3.c(428): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\smooth_opengl3\smooth_opengl3.c(428): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\smooth_opengl3\smooth_opengl3.c(437): Warning! W303: Parameter 'menuID' has been defined, but not referenced

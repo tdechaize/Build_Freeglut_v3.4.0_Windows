@@ -1,0 +1,293 @@
+Open Watcom Linker Version 2.0 beta Nov  8 2023 01:50:13 (32-bit)
+Copyright (c) 2002-2023 The Open Watcom Contributors. All Rights Reserved.
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       24/04/02 15:24:28
+Executable Image: bin\CallbackMakerd.exe
+creating a Windows NT character-mode executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+.idata                          00404000             00000a2b
+DGROUP                          00405000             00001118
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE           AUTO           00401000        00000007
+_TEXT                  CODE           AUTO           00401010        00002af1
+TRANSFER CODE          CODE           AUTO           00403b04        00000216
+.idata                 .idata         .idata         00404000        00000a2b
+_NULL                  BEGDATA        DGROUP         00405000        00000004
+_AFTERNULL             BEGDATA        DGROUP         00405004        00000000
+CONST                  DATA           DGROUP         00405004        00000903
+CONST2                 DATA           DGROUP         00405908        00000000
+_DATA                  DATA           DGROUP         00405908        000004b4
+XIB                    DATA           DGROUP         00405dbc        00000000
+XI                     DATA           DGROUP         00405dbc        00000018
+XIE                    DATA           DGROUP         00405dd4        00000000
+YIB                    DATA           DGROUP         00405dd4        00000000
+YI                     DATA           DGROUP         00405dd4        0000000c
+YIE                    DATA           DGROUP         00405de0        00000000
+TIB                    DATA           DGROUP         00405de0        00000000
+TI                     DATA           DGROUP         00405de0        00000000
+TIE                    DATA           DGROUP         00405de0        00000000
+DATA                   DATA           DGROUP         00405de0        00000000
+_BSS                   BSS            DGROUP         00406000        00000118
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: CMakeFiles\CallbackMaker.dir\progs\demos\CallbackMaker\CallbackMaker.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\CallbackMaker\CallbackMaker.c)
+0040590c+      _windows
+0040591c+      _reshape_height
+0040592c+      _reshape_width
+0040593c+      _reshape_seq
+0040594c+      _reshape_called
+0040595c+      _position_left
+0040596c+      _position_top
+0040597c+      _position_seq
+0040598c+      _position_called
+0040599c+      _visibility_vis
+004059ac+      _visibility_seq
+004059bc+      _visibility_called
+004059cc+      _windowStatus_state
+004059dc+      _windowStatus_seq
+004059ec+      _windowStatus_called
+004059fc+      _key_mod
+00405a0c+      _key_y
+00405a1c+      _key_x
+00405a2c+      _key_key
+00405a3c+      _key_seq
+00405a4c+      _key_called
+00405a5c+      _keyup_mod
+00405a6c+      _keyup_y
+00405a7c+      _keyup_x
+00405a8c+      _keyup_key
+00405a9c+      _keyup_seq
+00405aac+      _keyup_called
+00405abc+      _special_mod
+00405acc+      _special_y
+00405adc+      _special_x
+00405aec+      _special_key
+00405afc+      _special_seq
+00405b0c+      _special_called
+00405b1c+      _specialup_mod
+00405b2c+      _specialup_y
+00405b3c+      _specialup_x
+00405b4c+      _specialup_key
+00405b5c+      _specialup_seq
+00405b6c+      _specialup_called
+00405b7c+      _joystick_d
+00405b8c+      _joystick_c
+00405b9c+      _joystick_b
+00405bac+      _joystick_a
+00405bbc+      _joystick_seq
+00405bcc+      _joystick_called
+00405bdc+      _mouse_mod
+00405bec+      _mouse_y
+00405bfc+      _mouse_x
+00405c0c+      _mouse_updown
+00405c1c+      _mouse_button
+00405c2c+      _mouse_seq
+00405c3c+      _mouse_called
+00405c4c+      _mousewheel_mod
+00405c5c+      _mousewheel_y
+00405c6c+      _mousewheel_x
+00405c7c+      _mousewheel_direction
+00405c8c+      _mousewheel_number
+00405c9c+      _mousewheel_seq
+00405cac+      _mousewheel_called
+00405cbc+      _motion_mod
+00405ccc+      _motion_y
+00405cdc+      _motion_x
+00405cec+      _motion_seq
+00405cfc+      _motion_called
+00405d0c+      _passivemotion_mod
+00405d1c+      _passivemotion_y
+00405d2c+      _passivemotion_x
+00405d3c+      _passivemotion_seq
+00405d4c+      _passivemotion_called
+00405d5c+      _entry_state
+00405d6c+      _entry_seq
+00405d7c+      _entry_called
+00405d8c+      _close_seq
+00405d9c+      _close_called
+00405dac+      _menudestroy_called
+00403321       main_
+00405db0+      _menustatus_called
+00405db4+      _menustate_called
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(cstrtwnt)
+0040371e       _cstart_
+0040371e*      mainCRTStartup
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(fltuse80.c)
+00405db8       _fltused_
+Module: C:\WATCOM\lib386\emu387.lib(386stub.asm)
+004037b0       __init_387_emulator
+004037b1*      __fini_387_emulator
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(argcv.c)
+00406100       __argv
+00406104       __argc
+00406108       ___argc
+0040610c       ___argv
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(main3wnt.c)
+004037c0       __NTMain
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(segdefns)
+00401003       ___begtext
+00405000*      __nullarea
+00405dbc       __Start_XI
+00405dd4       __End_XI
+00405dd4       __Start_YI
+00405de0       __End_YI
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dsetefg.c)
+00403800       __setEFGfmt_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dinitarg.c)
+004039c0       __Init_Argv_
+00403a20       __Fini_Argv_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(initrtns.c)
+00403a50       __InitRtns
+00403aa0       __FiniRtns
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dcinit.c)
+00403b00       __CommonInit_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dosseg)
+00001234       __DOSseg__
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(histsplt.c)
+00406114       ___historical_splitparms
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+__CHK                               clbr20.dll
+__8087                              clbr20.dll
+_vsnprintf_                         clbr20.dll
+_glutBitmapString@8                 freeglutd.dll
+_glutGetWindow@0                    freeglutd.dll
+strcat_                             clbr20.dll
+_glClear@4                          OPENGL32.DLL
+_glDisable@4                        OPENGL32.DLL
+_glMatrixMode@4                     OPENGL32.DLL
+_glPushMatrix@0                     OPENGL32.DLL
+_glLoadIdentity@0                   OPENGL32.DLL
+_glutGet@4                          freeglutd.dll
+_glOrtho@48                         OPENGL32.DLL
+_glColor3ub@12                      OPENGL32.DLL
+_glRasterPos2i@8                    OPENGL32.DLL
+_glPopMatrix@0                      OPENGL32.DLL
+_glEnable@4                         OPENGL32.DLL
+printf_                             clbr20.dll
+_glutSwapBuffers@0                  freeglutd.dll
+vprintf_                            clbr20.dll
+___iob_br                           clbr20.dll
+fgets_                              clbr20.dll
+exit_                               clbr20.dll
+_glViewport@16                      OPENGL32.DLL
+_glutPostRedisplay@0                freeglutd.dll
+_glutGetModifiers@0                 freeglutd.dll
+_glutGetMenu@0                      freeglutd.dll
+_glutDisplayFunc@4                  freeglutd.dll
+_glutReshapeFunc@4                  freeglutd.dll
+_glutPositionFunc@4                 freeglutd.dll
+_glutKeyboardFunc@4                 freeglutd.dll
+_glutSpecialFunc@4                  freeglutd.dll
+_glutKeyboardUpFunc@4               freeglutd.dll
+_glutSpecialUpFunc@4                freeglutd.dll
+_glutJoystickFunc@8                 freeglutd.dll
+_glutMouseFunc@4                    freeglutd.dll
+_glutMouseWheelFunc@4               freeglutd.dll
+_glutMotionFunc@4                   freeglutd.dll
+_glutPassiveMotionFunc@4            freeglutd.dll
+_glutEntryFunc@4                    freeglutd.dll
+_glutCloseFunc@4                    freeglutd.dll
+_glutOverlayDisplayFunc@4           freeglutd.dll
+_glutSpaceballMotionFunc@4          freeglutd.dll
+_glutSpaceballRotateFunc@4          freeglutd.dll
+_glutSpaceballButtonFunc@4          freeglutd.dll
+_glutButtonBoxFunc@4                freeglutd.dll
+_glutDialsFunc@4                    freeglutd.dll
+_glutTabletMotionFunc@4             freeglutd.dll
+_glutTabletButtonFunc@4             freeglutd.dll
+_glutVisibilityFunc@4               freeglutd.dll
+_glutWindowStatusFunc@4             freeglutd.dll
+_glutInitWarningFunc@4              freeglutd.dll
+_glutInitErrorFunc@4                freeglutd.dll
+_glutInitWindowSize@8               freeglutd.dll
+_glutInitWindowPosition@8           freeglutd.dll
+_glutInitDisplayMode@4              freeglutd.dll
+_glutInit@8                         freeglutd.dll
+_glutSetOption@8                    freeglutd.dll
+_glutSetKeyRepeat@4                 freeglutd.dll
+_glutIdleFunc@4                     freeglutd.dll
+_glutMenuStatusFunc@4               freeglutd.dll
+_glutMenuStateFunc@4                freeglutd.dll
+_glutCreateWindow@4                 freeglutd.dll
+_glClearColor@16                    OPENGL32.DLL
+_glutIgnoreKeyRepeat@4              freeglutd.dll
+_glutSetIconTitle@4                 freeglutd.dll
+_glutCreateMenu@4                   freeglutd.dll
+_glutAddMenuEntry@8                 freeglutd.dll
+_glutMenuDestroyFunc@4              freeglutd.dll
+_glutSetMenuFont@8                  freeglutd.dll
+_glutAddSubMenu@8                   freeglutd.dll
+_glutAttachMenu@4                   freeglutd.dll
+_glutSetMenu@4                      freeglutd.dll
+_glutCreateSubWindow@20             freeglutd.dll
+_glutSetCursor@4                    freeglutd.dll
+_glutMainLoop@0                     freeglutd.dll
+_SetLD80bit_                        clbr20.dll
+__NewExceptionFilter_               clbr20.dll
+___process_fini                     clbr20.dll
+____Argv                            clbr20.dll
+____Argc                            clbr20.dll
+__get_EFG_Format_                   mt7r20.dll
+___EFG_printf                       clbr20.dll
+__get_EFG_cnvs2d_                   mt7r20.dll
+___EFG_scanf                        clbr20.dll
+malloc_                             clbr20.dll
+__LpCmdLine                         clbr20.dll
+__LpPgmName                         clbr20.dll
+free_                               clbr20.dll
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\WATCOM\lib386\nt\opengl32.lib
+lib\freeglutd.lib
+C:\WATCOM\lib386\emu387.lib
+C:\WATCOM\lib386\nt\mt7rdll.lib
+C:\WATCOM\lib386\nt\clbrdll.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  485d (18525.)
+Entry point address: 0040371e
+Link time: 00:00.94

@@ -1,0 +1,317 @@
+<html>
+<head>
+<title>Demos Freeglut lcc32 build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>06-04-2024 at 14:15.37</u><br />
+Build ended on: <u>06-04-2024 at 14:15.45</u><p />
+<b>-------------- Build: Debug lcc 3dview in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG -D_WIN32    progs\demos\3dview\3dview.c -Foobjlcc32\Debug\progs\demos\3dview\3dview.obj<br />
+<font color="#0000ff">Warning progs\demos\3dview\3dview.c: 322  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\3dview\3dview.c: 322  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\3dview\3dview.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\3dviewd.exe<br />
+Output file is binlcc32\Debug\3dviewd.exe with size 125.30 KB<br />
+<b>-------------- Build: Release lcc 3dview in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -I.\include -DNDEBUG -D_WIN32    progs\demos\3dview\3dview.c -Foobjlcc32\Release\progs\demos\3dview\3dview.obj<br />
+<font color="#0000ff">Warning progs\demos\3dview\3dview.c: 322  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\3dview\3dview.c: 322  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\3dview\3dview.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\3dview.exe<br />
+Output file is binlcc32\Release\3dview.exe with size 117.68 KB<br />
+<b>-------------- Build: Debug lcc CallbackMaker in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\CallbackMaker\CallbackMaker.c -Foobjlcc32\Debug\progs\demos\CallbackMaker\CallbackMaker.obj<br />
+<font color="#0000ff">Warning progs\demos\callbackmaker\callbackmaker.c: 753  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\CallbackMaker\CallbackMaker.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\CallbackMakerd.exe<br />
+Output file is binlcc32\Debug\CallbackMakerd.exe with size 157.67 KB<br />
+<b>-------------- Build: Release lcc CallbackMaker in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\CallbackMaker\CallbackMaker.c -Foobjlcc32\Release\progs\demos\CallbackMaker\CallbackMaker.obj<br />
+<font color="#0000ff">Warning progs\demos\callbackmaker\callbackmaker.c: 753  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\CallbackMaker\CallbackMaker.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\CallbackMaker.exe<br />
+Output file is binlcc32\Release\CallbackMaker.exe with size 134.83 KB<br />
+<b>-------------- Build: Debug lcc fractals in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -D_DEBUG -DDEBUG -I.\include    progs\demos\Fractals\fractals.c -Foobjlcc32\Debug\progs\demos\Fractals\fractals.obj<br />
+<font color="#0000ff">Warning progs\demos\fractals\fractals.c: 343  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\fractals\fractals.c: 343  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\Fractals\fractals.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\fractalsd.exe<br />
+Output file is binlcc32\Debug\fractalsd.exe with size 144.53 KB<br />
+<b>-------------- Build: Release lcc fractals in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\Fractals\fractals.c -Foobjlcc32\Release\progs\demos\Fractals\fractals.obj<br />
+<font color="#0000ff">Warning progs\demos\fractals\fractals.c: 343  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\fractals\fractals.c: 343  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\Fractals\fractals.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\fractals.exe<br />
+Output file is binlcc32\Release\fractals.exe with size 138.60 KB<br />
+<b>-------------- Build: Debug lcc fractalsrandom in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\Fractals_random\fractals_random.c -Foobjlcc32\Debug\progs\demos\Fractals_random\fractals_random.obj<br />
+<font color="#0000ff">Warning progs\demos\fractals_random\fractals_random.c: 396  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\fractals_random\fractals_random.c: 396  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\Fractals_random\fractals_random.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\fractals_randomd.exe<br />
+Output file is binlcc32\Debug\fractals_randomd.exe with size 148.02 KB<br />
+<b>-------------- Build: Release lcc fractalsrandom in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\Fractals_random\fractals_random.c -Foobjlcc32\Release\progs\demos\Fractals_random\fractals_random.obj<br />
+<font color="#0000ff">Warning progs\demos\fractals_random\fractals_random.c: 396  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\fractals_random\fractals_random.c: 396  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\Fractals_random\fractals_random.obj  glu32.lib opengl32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\fractals_random.exe<br />
+Output file is binlcc32\Release\fractals_random.exe with size 140.77 KB<br />
+<b>-------------- Build: Debug lcc One in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lrc.exe -IC:\lcc\include -foobjlcc32\Debug\progs\demos\One\one.res  progs\demos\One\one.rc<br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\One\one.c -Foobjlcc32\Debug\progs\demos\One\one.obj<br />
+<font color="#0000ff">Warning progs\demos\one\one.c: 421  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\One\one.obj  objlcc32\Debug\progs\demos\One\one.res glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\Oned.exe<br />
+Output file is binlcc32\Debug\Oned.exe with size 127.65 KB<br />
+<b>-------------- Build: Release lcc One in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lrc.exe -IC:\lcc\include -foobjlcc32\Release\progs\demos\One\one.res  progs\demos\One\one.rc<br />
+lcc.exe -c -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\One\one.c -Foobjlcc32\Release\progs\demos\One\one.obj<br />
+<font color="#0000ff">Warning progs\demos\one\one.c: 421  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\One\one.obj  objlcc32\Release\progs\demos\One\one.res glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\One.exe<br />
+Output file is binlcc32\Release\One.exe with size 119.14 KB<br />
+<b>-------------- Build: Debug lcc lorenz in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\Lorenz\lorenz.c -Foobjlcc32\Debug\progs\demos\Lorenz\lorenz.obj<br />
+<font color="#0000ff">Warning progs\demos\lorenz\lorenz.c: 392  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\lorenz\lorenz.c: 392  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\Lorenz\lorenz.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\lorenzd.exe<br />
+Output file is binlcc32\Debug\lorenzd.exe with size 148.69 KB<br />
+<b>-------------- Build: Release lcc lorenz in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\Lorenz\lorenz.c -Foobjlcc32\Release\progs\demos\Lorenz\lorenz.obj<br />
+<font color="#0000ff">Warning progs\demos\lorenz\lorenz.c: 392  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\lorenz\lorenz.c: 392  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\Lorenz\lorenz.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\lorenz.exe<br />
+Output file is binlcc32\Release\lorenz.exe with size 139.82 KB<br />
+<b>-------------- Build: Debug lcc resizer in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -D_DEBUG -DDEBUG -I.\include    progs\demos\resizer\resizer.c -Foobjlcc32\Debug\progs\demos\resizer\resizer.obj<br />
+<font color="#0000ff">Warning progs\demos\resizer\resizer.c: 318  Missing prototype for 'DrawQuad'</font><br />
+<font color="#0000ff">Warning progs\demos\resizer\resizer.c: 408  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\resizer\resizer.c: 408  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 5 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\resizer\resizer.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\resizerd.exe<br />
+Output file is binlcc32\Debug\resizerd.exe with size 125.57 KB<br />
+<b>-------------- Build: Release lcc resizer in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\resizer\resizer.c -Foobjlcc32\Release\progs\demos\resizer\resizer.obj<br />
+<font color="#0000ff">Warning progs\demos\resizer\resizer.c: 318  Missing prototype for 'DrawQuad'</font><br />
+<font color="#0000ff">Warning progs\demos\resizer\resizer.c: 408  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\resizer\resizer.c: 408  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 5 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\resizer\resizer.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\resizer.exe<br />
+Output file is binlcc32\Release\resizer.exe with size 117.47 KB<br />
+<b>-------------- Build: Debug lcc multi-touch in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\multi-touch\multi-touch.c -Foobjlcc32\Debug\progs\demos\multi-touch\multi-touch.obj<br />
+<font color="#0000ff">Warning progs\demos\multi-touch\multi-touch.c: 164  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\multi-touch\multi-touch.c: 164  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\multi-touch\multi-touch.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\multi-touchd.exe<br />
+Output file is binlcc32\Debug\multi-touchd.exe with size 114.88 KB<br />
+<b>-------------- Build: Release lcc multi-touch in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\multi-touch\multi-touch.c -Foobjlcc32\Release\progs\demos\multi-touch\multi-touch.obj<br />
+<font color="#0000ff">Warning progs\demos\multi-touch\multi-touch.c: 164  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\multi-touch\multi-touch.c: 164  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\multi-touch\multi-touch.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\multi-touch.exe<br />
+Output file is binlcc32\Release\multi-touch.exe with size 109.92 KB<br />
+<b>-------------- Build: Debug lcc shapes in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\shapes\glmatrix.c -Foobjlcc32\Debug\progs\demos\shapes\glmatrix.obj<br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\shapes\shapes.c -Foobjlcc32\Debug\progs\demos\shapes\shapes.obj<br />
+<font color="#0000ff">Warning progs\demos\shapes\shapes.c: 791  Missing prototype for 'drawInfo'</font><br />
+<font color="#0000ff">Warning progs\demos\shapes\shapes.c: 961  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\shapes\shapes.c: 961  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 5 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\shapes\glmatrix.obj objlcc32\Debug\progs\demos\shapes\shapes.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\shapesd.exe<br />
+Output file is binlcc32\Debug\shapesd.exe with size 188.80 KB<br />
+<b>-------------- Build: Release lcc shapes in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\shapes\glmatrix.c -Foobjlcc32\Release\progs\demos\shapes\glmatrix.obj<br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\shapes\shapes.c -Foobjlcc32\Release\progs\demos\shapes\shapes.obj<br />
+<font color="#0000ff">Warning progs\demos\shapes\shapes.c: 791  Missing prototype for 'drawInfo'</font><br />
+<font color="#0000ff">Warning progs\demos\shapes\shapes.c: 961  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\shapes\shapes.c: 961  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 5 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\shapes\glmatrix.obj objlcc32\Release\progs\demos\shapes\shapes.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\shapes.exe<br />
+Output file is binlcc32\Release\shapes.exe with size 161.78 KB<br />
+<b>-------------- Build: Debug lcc smooth in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\smooth_opengl3\smooth_opengl3.c -Foobjlcc32\Debug\progs\demos\smooth_opengl3\smooth_opengl3.obj<br />
+<font color="#0000ff">Warning progs\demos\smooth_opengl3\smooth_opengl3.c: 470  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\smooth_opengl3\smooth_opengl3.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\smooth_opengl3d.exe<br />
+Output file is binlcc32\Debug\smooth_opengl3d.exe with size 127.16 KB<br />
+<b>-------------- Build: Release lcc smooth in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\smooth_opengl3\smooth_opengl3.c -Foobjlcc32\Release\progs\demos\smooth_opengl3\smooth_opengl3.obj<br />
+<font color="#0000ff">Warning progs\demos\smooth_opengl3\smooth_opengl3.c: 470  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\smooth_opengl3\smooth_opengl3.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\smooth_opengl3.exe<br />
+Output file is binlcc32\Release\smooth_opengl3.exe with size 113.55 KB<br />
+<b>-------------- Build: Debug lcc spaceball in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\spaceball\spaceball.c -Foobjlcc32\Debug\progs\demos\spaceball\spaceball.obj<br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\spaceball\vmath.c -Foobjlcc32\Debug\progs\demos\spaceball\vmath.obj<br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.c: 17  static function v3_cons is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.c: 17  static function quat_cons is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.c: 17  static function quat_to_mat is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 49  static 'void function(pointer to array 4 of float,vec4_t) quat_to_mat' is not referenced</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 26  static 'vec4_t function(float,float,float,float) quat_cons' is not referenced</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 2  static 'vec3_t function(float,float,float) v3_cons' is not referenced</font><br />
+0 errors, 6 warnings<br />
+<font color="#0000ff">Warning progs\demos\spaceball\spaceball.c: 178  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\spaceball.c: 178  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\spaceball.c: 178  static function quat_mul is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 36  static 'vec4_t function(vec4_t,vec4_t) quat_mul' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 6 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\spaceball\spaceball.obj objlcc32\Debug\progs\demos\spaceball\vmath.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\spaceballd.exe<br />
+Output file is binlcc32\Debug\spaceballd.exe with size 49.30 KB<br />
+<b>-------------- Build: Release lcc spaceball in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\spaceball\spaceball.c -Foobjlcc32\Release\progs\demos\spaceball\spaceball.obj<br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\spaceball\vmath.c -Foobjlcc32\Release\progs\demos\spaceball\vmath.obj<br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.c: 17  static function v3_cons is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.c: 17  static function quat_cons is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.c: 17  static function quat_to_mat is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 49  static 'void function(pointer to array 4 of float,vec4_t) quat_to_mat' is not referenced</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 26  static 'vec4_t function(float,float,float,float) quat_cons' is not referenced</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 2  static 'vec3_t function(float,float,float) v3_cons' is not referenced</font><br />
+0 errors, 6 warnings<br />
+<font color="#0000ff">Warning progs\demos\spaceball\spaceball.c: 178  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\spaceball.c: 178  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\spaceball.c: 178  static function quat_mul is never used</font><br />
+<font color="#0000ff">Warning progs\demos\spaceball\vmath.inl: 36  static 'vec4_t function(vec4_t,vec4_t) quat_mul' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 6 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\spaceball\spaceball.obj objlcc32\Release\progs\demos\spaceball\vmath.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\spaceball.exe<br />
+Output file is binlcc32\Release\spaceball.exe with size 39.37 KB<br />
+<b>-------------- Build: Debug lcc joystick in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\joystick\joystick.c -Foobjlcc32\Debug\progs\demos\joystick\joystick.obj<br />
+<font color="#0000ff">Warning progs\demos\joystick\joystick.c: 234  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\joystick\joystick.c: 234  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\joystick\joystick.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\joystickd.exe<br />
+Output file is binlcc32\Debug\joystickd.exe with size 120.60 KB<br />
+<b>-------------- Build: Release lcc joystick in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\joystick\joystick.c -Foobjlcc32\Release\progs\demos\joystick\joystick.obj<br />
+<font color="#0000ff">Warning progs\demos\joystick\joystick.c: 234  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\joystick\joystick.c: 234  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\joystick\joystick.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\joystick.exe<br />
+Output file is binlcc32\Release\joystick.exe with size 114.17 KB<br />
+<b>-------------- Build: Debug lcc subwin in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\subwin\subwin.c -Foobjlcc32\Debug\progs\demos\subwin\subwin.obj<br />
+<font color="#0000ff">Warning progs\demos\subwin\subwin.c: 250  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\subwin\subwin.c: 250  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\subwin\subwin.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\subwind.exe<br />
+Output file is binlcc32\Debug\subwind.exe with size 116.54 KB<br />
+<b>-------------- Build: Release lcc subwin in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\subwin\subwin.c -Foobjlcc32\Release\progs\demos\subwin\subwin.obj<br />
+<font color="#0000ff">Warning progs\demos\subwin\subwin.c: 250  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\subwin\subwin.c: 250  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\subwin\subwin.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\subwin.exe<br />
+Output file is binlcc32\Release\subwin.exe with size 111.76 KB<br />
+<b>-------------- Build: Release lcc timer in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\timer\timer.c -Foobjlcc32\Release\progs\demos\timer\timer.obj<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\timer\timer.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\timer.exe<br />
+Output file is binlcc32\Release\timer.exe with size 110.28 KB<br />
+<b>-------------- Build: Debug lcc timer_callback in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\timer_callback\timer.c -Foobjlcc32\Debug\progs\demos\timer_callback\timer.obj<br />
+<font color="#0000ff">Warning progs\demos\timer_callback\timer.c: 196  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\timer_callback\timer.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\timer_callbackd.exe<br />
+Output file is binlcc32\Debug\timer_callbackd.exe with size 115.68 KB<br />
+<b>-------------- Build: Release lcc timer_callback in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\timer_callback\timer.c -Foobjlcc32\Release\progs\demos\timer_callback\timer.obj<br />
+<font color="#0000ff">Warning progs\demos\timer_callback\timer.c: 196  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 2 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\timer_callback\timer.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\timer_callback.exe<br />
+Output file is binlcc32\Release\timer_callback.exe with size 110.95 KB<br />
+<b>-------------- Build: Debug lcc keyboard in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\keyboard\keyboard.c -Foobjlcc32\Debug\progs\demos\keyboard\keyboard.obj<br />
+<font color="#0000ff">Warning progs\demos\keyboard\keyboard.c: 169  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\keyboard\keyboard.c: 169  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\keyboard\keyboard.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\keyboardd.exe<br />
+Output file is binlcc32\Debug\keyboardd.exe with size 117.39 KB<br />
+<b>-------------- Build: Release lcc keyboard in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\keyboard\keyboard.c -Foobjlcc32\Release\progs\demos\keyboard\keyboard.obj<br />
+<font color="#0000ff">Warning progs\demos\keyboard\keyboard.c: 169  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\keyboard\keyboard.c: 169  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\keyboard\keyboard.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\keyboard.exe<br />
+Output file is binlcc32\Release\keyboard.exe with size 111.17 KB<br />
+<b>-------------- Build: Debug lcc indexed_color in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -IC:\lcc\include  -g2 -I.\include -D_DEBUG -DDEBUG    progs\demos\indexed_color\idxcol.c -Foobjlcc32\Debug\progs\demos\indexed_color\idxcol.obj<br />
+<font color="#0000ff">Warning progs\demos\indexed_color\idxcol.c: 176  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\indexed_color\idxcol.c: 176  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Debug\progs\demos\indexed_color\idxcol.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Debug\freeglutd.lib -o binlcc32\Debug\indexed_colord.exe<br />
+Output file is binlcc32\Debug\indexed_colord.exe with size 117.17 KB<br />
+<b>-------------- Build: Release lcc indexed_color in Demos Freeglut lcc32 (compiler: LCC Compiler)---------------</b><br />
+lcc.exe -c -Iinclude -IC:\lcc\include  -I.\include -DNDEBUG    progs\demos\indexed_color\idxcol.c -Foobjlcc32\Release\progs\demos\indexed_color\idxcol.obj<br />
+<font color="#0000ff">Warning progs\demos\indexed_color\idxcol.c: 176  static function glutCreateMenu_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning progs\demos\indexed_color\idxcol.c: 176  static function glutCreateMenuUcall_ATEXIT_HACK is never used</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_ucall.h: 101  static 'int function(pointer to void function(int,pointer to void),pointer to void) glutCreateMenuUcall_ATEXIT_HACK' is not referenced</font><br />
+<font color="#0000ff">Warning include\gl\freeglut_std.h: 650  static 'int function(pointer to void function(int)) glutCreateMenu_ATEXIT_HACK' is not referenced</font><br />
+0 errors, 4 warnings<br />
+lcclnk.exe -subsystem console -LC:\lcc\lib  objlcc32\Release\progs\demos\indexed_color\idxcol.obj  glu32.lib opengl32.lib advapi32.lib comdlg32.lib gdi32.lib winmm.lib binlcc32\Release\freeglut.lib -o binlcc32\Release\indexed_color.exe<br />
+Output file is binlcc32\Release\indexed_color.exe with size 111.70 KB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minute(s), 7 second(s))</font><br />
+<font color="#0000ff">0 error(s), 132 warning(s) (0 minute(s), 7 second(s))</font><br />
+</tt>
+</body>
+</html>

@@ -1,0 +1,8 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(137): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(137): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(199): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(199): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(231): Warning! W303: Parameter 'button' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(231): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(231): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Lorenz\lorenz.c(318): Warning! W303: Parameter 'value' has been defined, but not referenced

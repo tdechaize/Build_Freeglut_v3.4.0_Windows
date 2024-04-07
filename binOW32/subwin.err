@@ -1,0 +1,4 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\subwin\subwin.c(137): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\subwin\subwin.c(137): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\subwin\subwin.c(162): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\subwin\subwin.c(162): Warning! W303: Parameter 'x' has been defined, but not referenced

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Freeglut">
+		<Project filename="Build_freeglut.cbp" />
+		<Project filename="Demos all build_pellesc.cbp" />
+		<Project filename="Demos all build_pellesc64.cbp" />
+		<Project filename="Demos all build_lcc.cbp" />
+		<Project filename="Demos all build_dmc.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

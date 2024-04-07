@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Demos Freeglut pellesc64" />
+		<Option platforms="Windows;" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="pelles_c_2021_64b" />
+		<Build>
+			<Target title="Debug pellesc 64 3dview">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/3dviewd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glut32" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 3dview">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/3dview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 CallbackMaker">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/CallbackMakerd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 CallbackMaker">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/CallbackMaker" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 fractals">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/fractalsd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 fractals">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/fractals" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 fractalsrandom">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/fractals_randomd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 fractalsrandom">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/fractals_random" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 One">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/Oned" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 One">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/One" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 lorenz">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/lorenzd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 lorenz">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/lorenz" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 resizer">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/resizerd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 resizer">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/resizer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 multi-touch">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/multi-touchd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 multi-touch">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/multi-touch" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 shapes">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/shapesd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 shapes">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/shapes" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 smooth">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/smooth_opengl3d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 smooth">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/smooth_opengl3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 spaceball">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/spaceballd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 spaceball">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/spaceball" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 joystick">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/joystickd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 joystick">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/joystick" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 subwin">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/subwind" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 subwin">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/subwin" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 timer">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/timerd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 timer">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/timer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 timer_callback">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/timer_callbackd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 timer_callback">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/timer_callback" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 keyboard">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/keyboardd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 keyboard">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/keyboard" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug pellesc 64 indexed_color">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Debug/indexed_colord" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Debug" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DDEBUG" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release pellesc 64 indexed_color">
+				<Option platforms="Windows;" />
+				<Option output="binpellesc64/Release/indexed_color" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objpellesc64/Release/" />
+				<Option type="1" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/subsystem:console" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="advapi32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binpellesc64/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="Demos all build pellesc64" targets="Debug pellesc 64 3dview;Release pellesc 64 3dview;Debug pellesc 64 CallbackMaker;Release pellesc 64 CallbackMaker;Debug pellesc 64 fractals;Release pellesc 64 fractals;Debug pellesc 64 fractalsrandom;Release pellesc 64 fractalsrandom;Debug pellesc 64 One;Release pellesc 64 One;Debug pellesc 64 lorenz;Release pellesc 64 lorenz;Debug pellesc 64 resizer;Release pellesc 64 resizer;Debug pellesc 64 multi-touch;Release pellesc 64 multi-touch;Debug pellesc 64 shapes;Release pellesc 64 shapes;Debug pellesc 64 smooth;Release pellesc 64 smooth;Debug pellesc 64 spaceball;Release pellesc 64 spaceball;Debug pellesc 64 joystick;Release pellesc 64 joystick;Debug pellesc 64 subwin;Release pellesc 64 subwin;Debug pellesc 64 timer;Release pellesc 64 timer;Debug pellesc 64 timer_callback;Release pellesc 64 timer_callback;Debug pellesc 64 keyboard;Release pellesc 64 keyboard;Debug pellesc 64 indexed_color;Release pellesc 64 indexed_color;" />
+		</VirtualTargets>
+		<Unit filename="include/GL/freeglut.h" />
+		<Unit filename="include/GL/freeglut_ext.h" />
+		<Unit filename="include/GL/freeglut_std.h" />
+		<Unit filename="include/GL/freeglut_ucall.h" />
+		<Unit filename="progs/demos/3dview/3dview.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 3dview" />
+			<Option target="Release pellesc 64 3dview" />
+		</Unit>
+		<Unit filename="progs/demos/CallbackMaker/CallbackMaker.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 CallbackMaker" />
+			<Option target="Release pellesc 64 CallbackMaker" />
+		</Unit>
+		<Unit filename="progs/demos/Fractals/fractals.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 fractals" />
+			<Option target="Release pellesc 64 fractals" />
+		</Unit>
+		<Unit filename="progs/demos/Fractals_random/fractals_random.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 fractalsrandom" />
+			<Option target="Release pellesc 64 fractalsrandom" />
+		</Unit>
+		<Unit filename="progs/demos/Lorenz/lorenz.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 lorenz" />
+			<Option target="Release pellesc 64 lorenz" />
+		</Unit>
+		<Unit filename="progs/demos/One/one.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 One" />
+			<Option target="Release pellesc 64 One" />
+		</Unit>
+		<Unit filename="progs/demos/One/one.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="Debug pellesc 64 One" />
+			<Option target="Release pellesc 64 One" />
+		</Unit>
+		<Unit filename="progs/demos/indexed_color/idxcol.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 indexed_color" />
+			<Option target="Release pellesc 64 indexed_color" />
+		</Unit>
+		<Unit filename="progs/demos/joystick/joystick.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 joystick" />
+			<Option target="Release pellesc 64 joystick" />
+		</Unit>
+		<Unit filename="progs/demos/keyboard/keyboard.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 keyboard" />
+			<Option target="Release pellesc 64 keyboard" />
+		</Unit>
+		<Unit filename="progs/demos/multi-touch/multi-touch.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 multi-touch" />
+			<Option target="Release pellesc 64 multi-touch" />
+		</Unit>
+		<Unit filename="progs/demos/resizer/resizer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 resizer" />
+			<Option target="Release pellesc 64 resizer" />
+		</Unit>
+		<Unit filename="progs/demos/shapes/glmatrix.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 shapes" />
+			<Option target="Release pellesc 64 shapes" />
+		</Unit>
+		<Unit filename="progs/demos/shapes/shapes.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 shapes" />
+			<Option target="Release pellesc 64 shapes" />
+		</Unit>
+		<Unit filename="progs/demos/smooth_opengl3/smooth_opengl3.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 smooth" />
+			<Option target="Release pellesc 64 smooth" />
+		</Unit>
+		<Unit filename="progs/demos/spaceball/spaceball.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 spaceball" />
+			<Option target="Release pellesc 64 spaceball" />
+		</Unit>
+		<Unit filename="progs/demos/spaceball/vmath.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 spaceball" />
+			<Option target="Release pellesc 64 spaceball" />
+		</Unit>
+		<Unit filename="progs/demos/subwin/subwin.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 subwin" />
+			<Option target="Release pellesc 64 subwin" />
+		</Unit>
+		<Unit filename="progs/demos/timer/timer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 timer" />
+			<Option target="Release pellesc 64 timer" />
+		</Unit>
+		<Unit filename="progs/demos/timer_callback/timer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug pellesc 64 timer_callback" />
+			<Option target="Release pellesc 64 timer_callback" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

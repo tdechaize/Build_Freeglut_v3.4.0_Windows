@@ -1,0 +1,2 @@
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_init_mswin.c(163): Warning! W303: Parameter 'pDisplay' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_init_mswin.c(163): Warning! W303: Parameter 'MContext' has been defined, but not referenced

@@ -1,0 +1,2 @@
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\bin\Release\freeglut.dll
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\multi-touch.dir\Release\multi-to.D26B4E32.Up2Date

@@ -1,0 +1,282 @@
+Open Watcom Linker Version 2.0 beta Nov  8 2023 01:50:13 (32-bit)
+Copyright (c) 2002-2023 The Open Watcom Contributors. All Rights Reserved.
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       24/04/02 15:49:53
+Executable Image: bin\shapes.exe
+creating a Windows NT character-mode executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+.idata                          00404000             00000b0e
+DGROUP                          00405000             00004194
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE           AUTO           00401000        00000007
+_TEXT                  CODE           AUTO           00401010        00002bf1
+TRANSFER CODE          CODE           AUTO           00403c04        00000258
+.idata                 .idata         .idata         00404000        00000b0e
+_NULL                  BEGDATA        DGROUP         00405000        00000004
+_AFTERNULL             BEGDATA        DGROUP         00405004        00000000
+CONST                  DATA           DGROUP         00405004        00001414
+CONST2                 DATA           DGROUP         00406418        000001a4
+_DATA                  DATA           DGROUP         004065c0        00001a38
+XIB                    DATA           DGROUP         00407ff8        00000000
+XI                     DATA           DGROUP         00407ff8        00000018
+XIE                    DATA           DGROUP         00408010        00000000
+YIB                    DATA           DGROUP         00408010        00000000
+YI                     DATA           DGROUP         00408010        0000000c
+YIE                    DATA           DGROUP         0040801c        00000000
+TIB                    DATA           DGROUP         0040801c        00000000
+TI                     DATA           DGROUP         0040801c        00000000
+TIE                    DATA           DGROUP         0040801c        00000000
+DATA                   DATA           DGROUP         0040801c        00000000
+_BSS                   BSS            DGROUP         00409000        00000194
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: CMakeFiles\shapes.dir\progs\demos\shapes\shapes.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\shapes\shapes.c)
+00409008+      _program
+0040900c+      _gl_UniformMatrix4fv
+00409010+      _gl_GetUniformLocation
+00409014+      _gl_AttachShader
+00409018+      _gl_CreateShader
+0040901c+      _gl_UseProgram
+00409020+      _gl_CreateProgram
+00409024+      _gl_UniformMatrix3fv
+00409028+      _gl_GetShaderiv
+0040902c+      _gl_GetAttribLocation
+00409030+      _gl_GetProgramInfoLog
+00409034+      _gl_GetProgramiv
+00409038+      _gl_LinkProgram
+0040903c+      _gl_ShaderSource
+00409040+      _gl_GetShaderInfoLog
+00409044+      _gl_CompileShader
+004065c0+      _vertexShaderSource
+00406614+      _fragmentShaderSource
+00406798+      _attribute_fg_coord
+0040679c+      _attribute_fg_normal
+004067a0+      _uniform_m
+004067a4+      _uniform_p
+004067a8+      _uniform_m_3x3_inv_transp
+004067ac+      _shaderReady
+00401010+      checkError_
+00401040+      initExtensionEntries_
+004011f0+      getAttribOrUniformLocation_
+00401260+      compileAndCheck_
+004012f0+      compileShaderSource_
+00401330+      linkAndCheck_
+004013c0+      createProgram_
+00401410+      initShader_
+00402ea0       main_
+00406508+      _light_ambient
+00406518+      _light_diffuse
+00406528+      _light_specular
+00406538+      _light_position
+00406548+      _mat_ambient
+00406558+      _mat_diffuse
+00406568+      _mat_specular
+00406578+      _high_shininess
+Module: CMakeFiles\shapes.dir\progs\demos\shapes\glmatrix.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\shapes\glmatrix.c)
+00403050       gl_matrix_mode_
+00403060       gl_push_matrix_
+004030b0       gl_pop_matrix_
+004030c0       gl_load_identity_
+00403100*      gl_load_matrixf_
+00403140+      gl_mult_matrixf_
+004031d0       gl_translatef_
+00403240       gl_rotatef_
+004033b0*      gl_scalef_
+00403420       gl_ortho_
+00403520       gl_frustum_
+00403610*      glu_perspective_
+00403680       get_matrix_
+004036b0       get_inv_transpose_3x3_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(cstrtwnt)
+00403818       _cstart_
+00403818*      mainCRTStartup
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(fltuse80.c)
+00407ff4       _fltused_
+Module: C:\WATCOM\lib386\emu387.lib(386stub.asm)
+004038b0       __init_387_emulator
+004038b1*      __fini_387_emulator
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(argcv.c)
+0040917c       __argv
+00409180       __argc
+00409184       ___argc
+00409188       ___argv
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(main3wnt.c)
+004038c0       __NTMain
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(segdefns)
+00401003       ___begtext
+00405000*      __nullarea
+00407ff8       __Start_XI
+00408010       __End_XI
+00408010       __Start_YI
+0040801c       __End_YI
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dsetefg.c)
+00403900       __setEFGfmt_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dinitarg.c)
+00403ac0       __Init_Argv_
+00403b20       __Fini_Argv_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(initrtns.c)
+00403b50       __InitRtns
+00403ba0       __FiniRtns
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dcinit.c)
+00403c00       __CommonInit_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dosseg)
+00001234       __DOSseg__
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(histsplt.c)
+00409190       ___historical_splitparms
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+__8087                              clbr20.dll
+IF@DSIN                             mt7r20.dll
+IF@DCOS                             mt7r20.dll
+IF@DTAN                             mt7r20.dll
+_glGetError@0                       OPENGL32.DLL
+___iob_br                           clbr20.dll
+fprintf_                            clbr20.dll
+_glutGetProcAddress@4               freeglut.dll
+exit_                               clbr20.dll
+malloc_                             clbr20.dll
+free_                               clbr20.dll
+_glutSolidTetrahedron@0             freeglut.dll
+_glutWireTetrahedron@0              freeglut.dll
+_glutSolidCube@8                    freeglut.dll
+_glutWireCube@8                     freeglut.dll
+_glutSolidOctahedron@0              freeglut.dll
+_glutWireOctahedron@0               freeglut.dll
+_glutSolidDodecahedron@0            freeglut.dll
+_glutWireDodecahedron@0             freeglut.dll
+_glutSolidRhombicDodecahedron@0     freeglut.dll
+_glutWireRhombicDodecahedron@0      freeglut.dll
+_glutSolidIcosahedron@0             freeglut.dll
+_glutWireIcosahedron@0              freeglut.dll
+_glutSolidSierpinskiSponge@16       freeglut.dll
+_glutWireSierpinskiSponge@16        freeglut.dll
+_glutSolidTorus@24                  freeglut.dll
+_glutWireTorus@24                   freeglut.dll
+_glutSolidSphere@16                 freeglut.dll
+_glutWireSphere@16                  freeglut.dll
+_glutSolidCone@24                   freeglut.dll
+_glutWireCone@24                    freeglut.dll
+_glutSolidCylinder@24               freeglut.dll
+_glutWireCylinder@24                freeglut.dll
+_glFrontFace@4                      OPENGL32.DLL
+_glutSolidTeapot@8                  freeglut.dll
+_glutWireTeapot@8                   freeglut.dll
+_glutSolidTeacup@8                  freeglut.dll
+_glutWireTeacup@8                   freeglut.dll
+_glutSolidTeaspoon@8                freeglut.dll
+_glutWireTeaspoon@8                 freeglut.dll
+_glBegin@4                          OPENGL32.DLL
+_glNormal3d@24                      OPENGL32.DLL
+_glVertex3d@24                      OPENGL32.DLL
+_glEnd@0                            OPENGL32.DLL
+_vsnprintf_                         clbr20.dll
+_glGetIntegerv@8                    OPENGL32.DLL
+_glPushMatrix@0                     OPENGL32.DLL
+_glLoadIdentity@0                   OPENGL32.DLL
+_glMatrixMode@4                     OPENGL32.DLL
+_glOrtho@48                         OPENGL32.DLL
+_glutBitmapHeight@4                 freeglut.dll
+_glutBitmapWidth@8                  freeglut.dll
+_glRasterPos2i@8                    OPENGL32.DLL
+_glutBitmapString@8                 freeglut.dll
+_glPopMatrix@0                      OPENGL32.DLL
+_glViewport@16                      OPENGL32.DLL
+_glutGet@4                          freeglut.dll
+_glClear@4                          OPENGL32.DLL
+_glutSetOption@8                    freeglut.dll
+_glShadeModel@4                     OPENGL32.DLL
+_glutSetVertexAttribCoord3@4        freeglut.dll
+_glutSetVertexAttribNormal@4        freeglut.dll
+_glFrustum@48                       OPENGL32.DLL
+_glEnable@4                         OPENGL32.DLL
+_glColor3d@24                       OPENGL32.DLL
+_glTranslated@24                    OPENGL32.DLL
+_glRotated@32                       OPENGL32.DLL
+_glDisable@4                        OPENGL32.DLL
+printf_                             clbr20.dll
+_glutSwapBuffers@0                  freeglut.dll
+_glutPostRedisplay@0                freeglut.dll
+_glutLeaveMainLoop@0                freeglut.dll
+_glutInitWindowSize@8               freeglut.dll
+_glutInitWindowPosition@8           freeglut.dll
+_glutInit@8                         freeglut.dll
+_glutInitDisplayMode@4              freeglut.dll
+_glutCreateWindow@4                 freeglut.dll
+_glutReshapeFunc@4                  freeglut.dll
+_glutDisplayFunc@4                  freeglut.dll
+_glutKeyboardFunc@4                 freeglut.dll
+_glutSpecialFunc@4                  freeglut.dll
+_glutIdleFunc@4                     freeglut.dll
+_glClearColor@16                    OPENGL32.DLL
+_glCullFace@4                       OPENGL32.DLL
+_glDepthFunc@4                      OPENGL32.DLL
+_glLightfv@12                       OPENGL32.DLL
+_glMaterialfv@12                    OPENGL32.DLL
+_glutMainLoop@0                     freeglut.dll
+_SetLD80bit_                        clbr20.dll
+memcpy_                             clbr20.dll
+__NewExceptionFilter_               clbr20.dll
+___process_fini                     clbr20.dll
+____Argv                            clbr20.dll
+____Argc                            clbr20.dll
+__get_EFG_Format_                   mt7r20.dll
+___EFG_printf                       clbr20.dll
+__get_EFG_cnvs2d_                   mt7r20.dll
+___EFG_scanf                        clbr20.dll
+__LpCmdLine                         clbr20.dll
+__LpPgmName                         clbr20.dll
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\WATCOM\lib386\nt\opengl32.lib
+lib\freeglut.lib
+C:\WATCOM\lib386\emu387.lib
+C:\WATCOM\lib386\nt\mt7rdll.lib
+C:\WATCOM\lib386\nt\clbrdll.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  7afe (31486.)
+Entry point address: 00403818
+Link time: 00:00.10

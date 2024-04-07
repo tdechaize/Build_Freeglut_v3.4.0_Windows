@@ -1,0 +1,795 @@
+Open Watcom Linker Version 2.0 beta Nov  8 2023 01:50:13 (32-bit)
+Copyright (c) 2002-2023 The Open Watcom Contributors. All Rights Reserved.
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       24/04/02 15:49:54
+Executable Image: bin\shapes_static.exe
+creating a Windows NT character-mode executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+.idata                          00415000             0000134a
+DGROUP                          00417000             0007f024
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE           AUTO           00401000        00000007
+_TEXT                  CODE           AUTO           00401010        000130a1
+TRANSFER CODE          CODE           AUTO           004140b4        00000498
+.idata                 .idata         .idata         00415000        0000134a
+_NULL                  BEGDATA        DGROUP         00417000        00000004
+_AFTERNULL             BEGDATA        DGROUP         00417004        00000000
+CONST                  DATA           DGROUP         00417004        000051c4
+CONST2                 DATA           DGROUP         0041c1c8        0000f58c
+_DATA                  DATA           DGROUP         0042b760        00005db8
+XIB                    DATA           DGROUP         00431518        00000000
+XI                     DATA           DGROUP         00431518        00000018
+XIE                    DATA           DGROUP         00431530        00000000
+YIB                    DATA           DGROUP         00431530        00000000
+YI                     DATA           DGROUP         00431530        0000000c
+YIE                    DATA           DGROUP         0043153c        00000000
+TIB                    DATA           DGROUP         0043153c        00000000
+TI                     DATA           DGROUP         0043153c        00000000
+TIE                    DATA           DGROUP         0043153c        00000000
+DATA                   DATA           DGROUP         0043153c        00000000
+_BSS                   BSS            DGROUP         00432000        00064024
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: CMakeFiles\shapes_static.dir\progs\demos\shapes\shapes.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\shapes\shapes.c)
+00432008+      _program
+0043200c+      _gl_UniformMatrix4fv
+00432010+      _gl_GetUniformLocation
+00432014+      _gl_AttachShader
+00432018+      _gl_CreateShader
+0043201c+      _gl_UseProgram
+00432020+      _gl_CreateProgram
+00432024+      _gl_UniformMatrix3fv
+00432028+      _gl_GetShaderiv
+0043202c+      _gl_GetAttribLocation
+00432030+      _gl_GetProgramInfoLog
+00432034+      _gl_GetProgramiv
+00432038+      _gl_LinkProgram
+0043203c+      _gl_ShaderSource
+00432040+      _gl_GetShaderInfoLog
+00432044+      _gl_CompileShader
+0042b760+      _vertexShaderSource
+0042b7b4+      _fragmentShaderSource
+0042b938+      _attribute_fg_coord
+0042b93c+      _attribute_fg_normal
+0042b940+      _uniform_m
+0042b944+      _uniform_p
+0042b948+      _uniform_m_3x3_inv_transp
+0042b94c+      _shaderReady
+00401010+      checkError_
+00401040+      initExtensionEntries_
+004011e0+      getAttribOrUniformLocation_
+00401250+      compileAndCheck_
+004012e0+      compileShaderSource_
+00401320+      linkAndCheck_
+004013b0+      createProgram_
+00401400+      initShader_
+00402e40       main_
+0041c2b8+      _light_ambient
+0041c2c8+      _light_diffuse
+0041c2d8+      _light_specular
+0041c2e8+      _light_position
+0041c2f8+      _mat_ambient
+0041c308+      _mat_diffuse
+0041c318+      _mat_specular
+0041c328+      _high_shininess
+Module: CMakeFiles\shapes_static.dir\progs\demos\shapes\glmatrix.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\shapes\glmatrix.c)
+00402ff0       gl_matrix_mode_
+00403000       gl_push_matrix_
+00403050       gl_pop_matrix_
+00403060       gl_load_identity_
+004030a0*      gl_load_matrixf_
+004030e0+      gl_mult_matrixf_
+00403170       gl_translatef_
+004031e0       gl_rotatef_
+00403350*      gl_scalef_
+004033c0       gl_ortho_
+004034c0       gl_frustum_
+004035b0*      glu_perspective_
+00403620       get_matrix_
+00403650       get_inv_transpose_3x3_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_ext.c)
+00404cf0       glutGetProcAddress_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_geometry.c)
+00404d30       fghDrawGeometryWire_
+00404dc0       fghDrawGeometrySolid_
+00406070+      fghGenerateCone_
+00406310+      fghGenerateCylinder_
+004065d0+      fghGenerateTorus_
+00407330       glutSolidSphere_
+00407370       glutWireSphere_
+004073b0       glutSolidCone_
+00407400       glutWireCone_
+00407450       glutSolidCylinder_
+004074a0       glutWireCylinder_
+004074f0       glutWireTorus_
+00407540       glutSolidTorus_
+00407590       glutWireCube_
+004075c0       glutSolidCube_
+004075f0       glutWireDodecahedron_
+00407620       glutSolidDodecahedron_
+00407690       glutWireIcosahedron_
+004076c0       glutSolidIcosahedron_
+00407730       glutWireOctahedron_
+00407760       glutSolidOctahedron_
+004077d0       glutWireRhombicDodecahedron_
+00407800       glutSolidRhombicDodecahedron_
+00407870       glutWireSierpinskiSponge_
+004078b0       glutSolidSierpinskiSponge_
+004078f0       glutWireTetrahedron_
+00407920       glutSolidTetrahedron_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_teapot.c)
+00408620       glutWireTeapot_
+00408690       glutSolidTeapot_
+00408700       glutWireTeacup_
+00408770       glutSolidTeacup_
+004087f0       glutWireTeaspoon_
+00408860       glutSolidTeaspoon_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_font.c)
+004088e0       fghFontByID_
+00408950       glutBitmapCharacter_
+00408a40       glutBitmapString_
+00408ba0       glutBitmapWidth_
+00408c00       glutBitmapLength_
+00408c90       glutBitmapHeight_
+00408cd0       glutStrokeCharacter_
+00408db0       glutStrokeString_
+00408ed0       glutStrokeWidthf_
+00408f50       glutStrokeWidth_
+00408f70       glutStrokeLengthf_
+00409050       glutStrokeLength_
+00409070       glutStrokeHeight_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_state.c)
+004090c0       glutSetOption_
+00409270       glutGet_
+00409680       glutDeviceGet_
+00409740       glutGetModifiers_
+00409790       glutLayerGet_
+004097e0       glutGetModeValues_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_gl2.c)
+00409810       glutSetVertexAttribCoord3_
+00409820       glutSetVertexAttribNormal_
+00409830       glutSetVertexAttribTexCoord2_
+00409840       fgInitGL2_
+00495e28       _fghBufferData
+00495e2c       _fghDeleteBuffers
+00495e30       _fghGenBuffers
+00495e34       _fghVertexAttribPointer
+00495e38       _fghBindBuffer
+00495e3c       _fghEnableVertexAttribArray
+00495e40       _fghDisableVertexAttribArray
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_display.c)
+004098e0       glutPostRedisplay_
+00409920       glutSwapBuffers_
+00409a30       glutPostWindowRedisplay_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_main.c)
+00409a60       fghOnReshapeNotify_
+00409ac0       fghOnPositionNotify_
+00409b10+      fghRedrawWindow_
+00409b50       fghRedrawWindowAndChildren_
+00409c70       fgSystemTime_
+00409c80       fgElapsedTime_
+00409c90       fgError_
+00409d40       fgWarning_
+00409e90+      fgProcessWork_
+00409f30       glutMainLoopEvent_
+00409f80       glutMainLoop_
+0040a040       glutLeaveMainLoop_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_init.c)
+0042f218       _fgState
+0040a070+      fghParseCommandLineArguments_
+0040a290       fghCloseInputDevices_
+0040a2b0       fgDeinitialize_
+0040a2b0       glutExit_
+0040a490       glutInit_
+0040a5b0       glutInitWindowPosition_
+0040a5e0       glutInitWindowSize_
+0040a610       glutInitDisplayMode_
+0040a6b0       glutInitDisplayString_
+0040a7b0       glutInitContextVersion_
+0040a7c0       glutInitContextFlags_
+0040a7d0       glutInitContextProfile_
+0040a7e0       glutInitErrorFuncUcall_
+0040a800       glutInitErrorFunc_
+0040a820       glutInitWarningFuncUcall_
+0040a840       glutInitWarningFunc_
+00495e44       _fgDisplay
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_window.c)
+0040a860       fghIsLegacyContextRequested_
+0040a890       fghNumberOfAuxBuffersRequested_
+0040a8c0       fghMapBit_
+0040a8d0       fghContextCreationError_
+0040a900       fgSetWindow_
+0040a910       fgOpenWindow_
+0040a9a0       fgCloseWindow_
+0040a9d0       glutCreateWindow_
+0040aa30       glutCreateSubWindow_
+0040aaf0       glutDestroyWindow_
+0040ab30       glutSetWindow_
+0040ab80       glutGetWindow_
+0040abb0       glutShowWindow_
+0040ac10       glutHideWindow_
+0040ac70       glutIconifyWindow_
+0040acd0       glutSetWindowTitle_
+0040ad30       glutSetIconTitle_
+0040ad90       glutReshapeWindow_
+0040ae00       glutPositionWindow_
+0040ae70       glutPushWindow_
+0040aed0       glutPopWindow_
+0040af30       glutFullScreen_
+0040afc0       glutLeaveFullScreen_
+0040b010       glutFullScreenToggle_
+0040b060       glutGetWindowData_
+0040b0b0       glutSetWindowData_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_callbacks.c)
+0040b100       glutIdleFuncUcall_
+0040b140       glutIdleFunc_
+0040b180       glutTimerFuncUcall_
+0040b230       glutTimerFunc_
+0040b270       glutMenuStateFunc_
+0040b2a0       glutMenuStatusFuncUcall_
+0040b2e0       glutMenuStatusFunc_
+0040b320       glutMenuDestroyFuncUcall_
+0040b370       glutMenuDestroyFunc_
+0040b3c0       glutPositionFuncUcall_
+0040b410       glutPositionFunc_
+0040b470       glutKeyboardFuncUcall_
+0040b4c0       glutKeyboardFunc_
+0040b520       glutKeyboardUpFuncUcall_
+0040b570       glutKeyboardUpFunc_
+0040b5c0       glutSpecialFuncUcall_
+0040b610       glutSpecialFunc_
+0040b660       glutSpecialUpFuncUcall_
+0040b6b0       glutSpecialUpFunc_
+0040b700       glutMouseFuncUcall_
+0040b750       glutMouseFunc_
+0040b7a0       glutMouseWheelFuncUcall_
+0040b7f0       glutMouseWheelFunc_
+0040b840       glutMotionFuncUcall_
+0040b890       glutMotionFunc_
+0040b8e0       glutPassiveMotionFuncUcall_
+0040b930       glutPassiveMotionFunc_
+0040b980       glutEntryFuncUcall_
+0040b9d0       glutEntryFunc_
+0040ba20       glutCloseFuncUcall_
+0040ba70       glutCloseFunc_
+0040bac0       glutWMCloseFuncUcall_
+0040bb10       glutWMCloseFunc_
+0040bb60       glutOverlayDisplayFuncUcall_
+0040bbb0       glutOverlayDisplayFunc_
+0040bc00       glutWindowStatusFuncUcall_
+0040bc50       glutWindowStatusFunc_
+0040bca0       glutButtonBoxFuncUcall_
+0040bcf0       glutButtonBoxFunc_
+0040bd40       glutDialsFuncUcall_
+0040bd90       glutDialsFunc_
+0040bde0       glutTabletMotionFuncUcall_
+0040be30       glutTabletMotionFunc_
+0040be80       glutTabletButtonFuncUcall_
+0040bed0       glutTabletButtonFunc_
+0040bf20       glutMultiEntryFuncUcall_
+0040bf70       glutMultiEntryFunc_
+0040bfd0       glutMultiButtonFuncUcall_
+0040c020       glutMultiButtonFunc_
+0040c070       glutMultiMotionFuncUcall_
+0040c0c0       glutMultiMotionFunc_
+0040c110       glutMultiPassiveFuncUcall_
+0040c160       glutMultiPassiveFunc_
+0040c1b0       glutInitContextFuncUcall_
+0040c200       glutInitContextFunc_
+0040c250       glutAppStatusFuncUcall_
+0040c2a0       glutAppStatusFunc_
+0040c2e0       glutDisplayFuncUcall_
+0040c350       glutDisplayFunc_
+0040c390       fghDefaultReshape_
+0040c3a0       glutReshapeFuncUcall_
+0040c410       glutReshapeFunc_
+0040c4b0       glutVisibilityFuncUcall_
+0040c530       glutVisibilityFunc_
+0040c570       glutJoystickFuncUcall_
+0040c670       glutJoystickFunc_
+0040c6b0       glutSpaceballMotionFuncUcall_
+0040c720       glutSpaceballMotionFunc_
+0040c760       glutSpaceballRotateFuncUcall_
+0040c7d0       glutSpaceballRotateFunc_
+0040c810       glutSpaceballButtonFuncUcall_
+0040c880       glutSpaceballButtonFunc_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(cstrtwnt)
+0040c8b2       _cstart_
+0040c8b2*      mainCRTStartup
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(fltuse80.c)
+0042f378       _fltused_
+Module: C:\WATCOM\lib386\emu387.lib(386stub.asm)
+0040c950       __init_387_emulator
+0040c951*      __fini_387_emulator
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(argcv.c)
+00495ef8       __argv
+00495efc       __argc
+00495f00       ___argc
+00495f04       ___argv
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_cursor.c)
+0040c960       fgSetCursor_
+0040c970       glutSetCursor_
+0040c9d0       glutWarpPointer_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_overlay.c)
+0040ca20       glutHideOverlay_
+0040ca20       glutShowOverlay_
+0040ca20       glutPostWindowOverlayRedisplay_
+0040ca20       glutPostOverlayRedisplay_
+0040ca20       glutUseLayer_
+0040ca20       glutRemoveOverlay_
+0040ca20       glutEstablishOverlay_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_menu.c)
+0040cac0       fgUpdateMenuHighlight_
+0040d0b0       fgDisplayMenu_
+0040d350       fgCheckActiveMenu_
+0040d480       fgDeactivateMenu_
+0040d580+      fghCalculateMenuBoxSize_
+0040d610       glutCreateMenuUcall_
+0040d660       glutCreateMenu_
+0040d6a0       glutDestroyMenu_
+0040d6f0       glutGetMenu_
+0040d720       glutSetMenu_
+0040d750       glutAddMenuEntry_
+0040d7d0       glutAddSubMenu_
+0040d860       glutSetMenuFont_
+0040d8d0       glutChangeToMenuEntry_
+0040d950       glutChangeToSubMenu_
+0040d9e0       glutRemoveMenuItem_
+0040da70       glutAttachMenu_
+0040dae0       glutDetachMenu_
+0040db50       glutGetMenuData_
+0040db80       glutSetMenuData_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_misc.c)
+0040dbb0       glutExtensionSupported_
+0040dcd0       glutReportErrors_
+0040dd10       glutIgnoreKeyRepeat_
+0040dd70       glutSetKeyRepeat_
+0040ddc0       glutSetColor_
+0040de00       glutGetColor_
+0040de30       glutCopyColormap_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c)
+0040de60       glutVideoResizeGet_
+0040de70       glutVideoPan_
+0040de70       glutVideoResize_
+0040de70       glutStopVideoResizing_
+0040de70       glutSetupVideoResizing_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_joystick.c)
+0040de80+      fgJoystickRawRead_
+0040e170       fgInitialiseJoysticks_
+0040e1a0       fgJoystickClose_
+0040e1e0       fgJoystickPollWindow_
+0040e2b0       fgJoystickDetect_
+0040e2f0       glutForceJoystickFunc_
+0040e330       glutJoystickGetNumAxes_
+0040e360       glutJoystickGetNumButtons_
+0040e390       glutJoystickNotWorking_
+0040e3c0       glutJoystickGetDeadBand_
+0040e3f0       glutJoystickSetDeadBand_
+0040e430       glutJoystickGetSaturation_
+0040e460       glutJoystickSetSaturation_
+0040e4a0       glutJoystickSetMinRange_
+0040e4e0       glutJoystickSetMaxRange_
+0040e520       glutJoystickSetCenter_
+0040e560       glutJoystickGetMinRange_
+0040e5b0       glutJoystickGetMaxRange_
+0040e600       glutJoystickGetCenter_
+00495f08+      _fgJoystick
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_ext_mswin.c)
+0040e650       fgPlatformGetGLUTProcAddress_
+0040e710       fgPlatformGetProcAddress_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_structure.c)
+0040e750       fgCreateWindow_
+0040e840       fgCreateMenu_
+0040e8f0       fgAddToWindowDestroyList_
+0040e960       fgCloseWindows_
+0040e990       fgDestroyWindow_
+0040ead0       fgDestroyMenu_
+0040ebc0       fgCreateStructure_
+0040ec00       fgDestroyStructure_
+0040ec30       fgEnumWindows_
+0040ec80       fgEnumMenus_
+0040ecd0       fgEnumSubWindows_
+0040ed60       fgWindowByHandle_
+0040edc0       fgWindowByID_
+0040ee20       fgMenuByID_
+0040ee80       fgGetActiveMenu_
+0040eeb0       fgListInit_
+0040eec0       fgListAppend_
+0040eee0       fgListRemove_
+0040ef20       fgListLength_
+0040ef40       fgListInsert_
+0042f3c0       _fgStructure
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_font_data.c)
+0042f7f4       _fgFontFixed8x13
+0042fc10       _fgFontFixed9x15
+0043002c       _fgFontHelvetica10
+00430448       _fgFontHelvetica12
+00430864       _fgFontHelvetica18
+00430c80       _fgFontTimesRoman10
+0043109c       _fgFontTimesRoman24
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_stroke_roman.c)
+004312b4       _fgStrokeRoman
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_stroke_mono_roman.c)
+004314c4       _fgStrokeMonoRoman
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_state_mswin.c)
+0040ef70       fgPlatformGlutGet_
+0040f4f0       fgPlatformGlutDeviceGet_
+0040f540       fgPlatformGlutGetModeValues_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_input_devices.c)
+0040f550       fgInputDeviceDetect_
+0040f580       fgInitialiseInputDevices_
+0040f5e0       fgInputDeviceClose_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_spaceball.c)
+0040f7c0       fgInitialiseSpaceball_
+0040f7d0*      fgSpaceballClose_
+0040f7e0       fgHasSpaceball_
+0040f810       fgSpaceballNumButtons_
+0040f840*      fgSpaceballSetWindow_
+004314e0       _fg_sball_initialized
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_display_mswin.c)
+0040f870       fgPlatformGlutSwapBuffers_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_main_mswin.c)
+0040f880       fgPlatformInitSystemTime_
+0040f890       fgPlatformSystemTime_
+0040f8c0       fgPlatformSleepForEvents_
+0040f8e0       fgPlatformProcessSingleEvent_
+0040fa20       fgPlatformMainLoopPreliminaryWork_
+00410110+      fghWindowUnderCursor_
+004101b0       _fgPlatformWindowProc@16
+00410ff0       fgPlatformInitWork_
+00411060       fgPlatformPosResZordWork_
+004112f0       fgPlatformVisibilityWork_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\fg_gamemode.c)
+00411350       glutGameModeString_
+004114b0       glutEnterGameMode_
+00411550       glutLeaveGameMode_
+004115b0       glutGameModeGet_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_init_mswin.c)
+00411640       fgPlatformInitialize_
+00411810       fgPlatformDeinitialiseInputDevices_
+00411830       fgPlatformCloseDisplay_
+00411860       fgPlatformDestroyContext_
+00411870*      __glutInitWithExit_
+00431500       ___glutExitFunc
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\util\xparsegeometry_repl.c)
+004118d0       XParseGeometry_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_window_mswin.c)
+00411b70       fgNewWGLCreateContext_
+00411dc0       fgSetupPixelFormat_
+00412050       fgPlatformSetWindow_
+004120a0+      fghGetDefaultWindowStyle_
+004120c0       fghGetStyleFromWindow_
+00412110       fghComputeWindowRectFromClientArea_UseStyle_
+00412180       fghComputeWindowRectFromClientArea_QueryWindow_
+004121c0       fghGetClientArea_
+004122d0       fgPlatformOpenWindow_
+004126c0       fgPlatformCloseWindow_
+00412740       fgPlatformHideWindow_
+00412760       fgPlatformGlutSetWindowTitle_
+004127c0       fgPlatformGlutSetIconTitle_
+00412820*      __glutCreateWindowWithExit_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(main3wnt.c)
+00412830       __NTMain
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(segdefns)
+00401003       ___begtext
+00417000*      __nullarea
+00431518       __Start_XI
+00431530       __End_XI
+00431530       __Start_YI
+0043153c       __End_YI
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dsetefg.c)
+00412870       __setEFGfmt_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dinitarg.c)
+00412a30       __Init_Argv_
+00412a90       __Fini_Argv_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_cursor_mswin.c)
+00412ab0       fgPlatformSetCursor_
+00412fc0       fgPlatformWarpPointer_
+00413000       fghPlatformGetCursorPos_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_menu_mswin.c)
+00413050       fgPlatformGetGameModeVMaxExtent_
+00413090       fgPlatformCheckMenuDeactivate_
+004130e0*      __glutCreateMenuWithExit_
+004130f0*      __glutCreateMenuUcallWithExit_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_cmap_mswin.c)
+00413110       fgPlatformSetColor_
+004131d0       fgPlatformGetColor_
+00413280       fgPlatformCopyColormap_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_joystick_mswin.c)
+004132b0       fgPlatformJoystickRawRead_
+00413640       fgPlatformJoystickOpen_
+00413850       fgPlatformJoystickInit_
+004138b0       fgPlatformJoystickClose_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_structure_mswin.c)
+004138c0       fgPlatformCreateWindow_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_input_devices_mswin.c)
+004138f0       fgPlatformRegisterDialDevice_
+00413960       fg_serial_open_
+00413a30       fg_serial_close_
+00413a70       fg_serial_getchar_
+00413ab0       fg_serial_putchar_
+00413ae0       fg_serial_flush_
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_spaceball_mswin.c)
+00413af0       fgPlatformInitializeSpaceball_
+00413b40       fgPlatformSpaceballClose_
+00413b50       fgPlatformHasSpaceball_
+00413b60*      fgIsSpaceballWinEvent_
+00413b60       fgPlatformSpaceballNumButtons_
+00413b70       fgPlatformSpaceballSetWindow_
+00413b80       fgSpaceballHandleWinEvent_
+00431508+      ___fgSpaceKeystate
+0043150c+      ___fgSpaceball
+Module: lib\freeglut_static.lib(C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_gamemode_mswin.c)
+00413da0+      fghChangeDisplayMode_
+00413f20       fgPlatformRememberState_
+00413f40       fgPlatformRestoreState_
+00413f50       fgPlatformChangeDisplayMode_
+00413fe0       fgPlatformLeaveGameMode_
+00413fe0       fgPlatformEnterGameMode_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(initrtns.c)
+00414000       __InitRtns
+00414050       __FiniRtns
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dcinit.c)
+004140b0       __CommonInit_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dosseg)
+00001234       __DOSseg__
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(histsplt.c)
+00496020       ___historical_splitparms
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+__8087                              clbr20.dll
+IF@DSIN                             mt7r20.dll
+IF@DCOS                             mt7r20.dll
+IF@DTAN                             mt7r20.dll
+_glGetError@0                       OPENGL32.DLL
+___iob_br                           clbr20.dll
+fprintf_                            clbr20.dll
+exit_                               clbr20.dll
+malloc_                             clbr20.dll
+free_                               clbr20.dll
+IF@DSQRT                            mt7r20.dll
+_glFrontFace@4                      OPENGL32.DLL
+_glBegin@4                          OPENGL32.DLL
+_glNormal3d@24                      OPENGL32.DLL
+_glVertex3d@24                      OPENGL32.DLL
+_glEnd@0                            OPENGL32.DLL
+_vsnprintf_                         clbr20.dll
+_glGetIntegerv@8                    OPENGL32.DLL
+_glPushMatrix@0                     OPENGL32.DLL
+_glLoadIdentity@0                   OPENGL32.DLL
+_glMatrixMode@4                     OPENGL32.DLL
+_glOrtho@48                         OPENGL32.DLL
+__CHP                               mt7r20.dll
+_glRasterPos2i@8                    OPENGL32.DLL
+_glPopMatrix@0                      OPENGL32.DLL
+_glViewport@16                      OPENGL32.DLL
+_glClear@4                          OPENGL32.DLL
+_glShadeModel@4                     OPENGL32.DLL
+_glFrustum@48                       OPENGL32.DLL
+_glEnable@4                         OPENGL32.DLL
+_glColor3d@24                       OPENGL32.DLL
+_glTranslated@24                    OPENGL32.DLL
+_glRotated@32                       OPENGL32.DLL
+_glDisable@4                        OPENGL32.DLL
+printf_                             clbr20.dll
+_glClearColor@16                    OPENGL32.DLL
+_glCullFace@4                       OPENGL32.DLL
+_glDepthFunc@4                      OPENGL32.DLL
+_glLightfv@12                       OPENGL32.DLL
+_glMaterialfv@12                    OPENGL32.DLL
+_SetLD80bit_                        clbr20.dll
+memcpy_                             clbr20.dll
+strncmp_                            clbr20.dll
+strcmp_                             clbr20.dll
+_glEnableClientState@4              OPENGL32.DLL
+_glVertexPointer@16                 OPENGL32.DLL
+_glNormalPointer@12                 OPENGL32.DLL
+_glDrawArrays@12                    OPENGL32.DLL
+_glDrawElements@16                  OPENGL32.DLL
+_glDisableClientState@4             OPENGL32.DLL
+_glTexCoordPointer@16               OPENGL32.DLL
+_glGetFloatv@8                      OPENGL32.DLL
+_glColor4f@16                       OPENGL32.DLL
+abs_                                clbr20.dll
+memset_                             clbr20.dll
+_glPushClientAttrib@4               OPENGL32.DLL
+_glPixelStorei@8                    OPENGL32.DLL
+_glBitmap@28                        OPENGL32.DLL
+_glPopClientAttrib@0                OPENGL32.DLL
+_glVertex2f@8                       OPENGL32.DLL
+_glTranslatef@12                    OPENGL32.DLL
+_glFlush@0                          OPENGL32.DLL
+vfprintf_                           clbr20.dll
+getenv_                             clbr20.dll
+sscanf_                             clbr20.dll
+_strdup_                            clbr20.dll
+strlen_                             clbr20.dll
+strtok_                             clbr20.dll
+strcspn_                            clbr20.dll
+_glDrawBuffer@4                     OPENGL32.DLL
+_glReadBuffer@4                     OPENGL32.DLL
+_glVertex2i@8                       OPENGL32.DLL
+_glColor4fv@4                       OPENGL32.DLL
+_glPushAttrib@4                     OPENGL32.DLL
+_glPopAttrib@0                      OPENGL32.DLL
+calloc_                             clbr20.dll
+strchr_                             clbr20.dll
+_glGetString@4                      OPENGL32.DLL
+strstr_                             clbr20.dll
+_wglGetProcAddress@4                OPENGL32.DLL
+_ClientToScreen@8                   USER32.DLL
+_ScreenToClient@8                   USER32.DLL
+_glGetBooleanv@8                    OPENGL32.DLL
+_GetPixelFormat@4                   GDI32.DLL
+_DescribePixelFormat@16             GDI32.DLL
+_GetClientRect@8                    USER32.DLL
+_GetWindowRect@8                    USER32.DLL
+_SetRect@20                         USER32.DLL
+_CopyRect@8                         USER32.DLL
+_GetSystemMetrics@4                 USER32.DLL
+_SwapBuffers@4                      GDI32.DLL
+_timeGetTime@0                      WINMM.DLL
+_MsgWaitForMultipleObjects@20       USER32.DLL
+_PeekMessageA@20                    USER32.DLL
+_GetMessageA@16                     USER32.DLL
+_TranslateMessage@4                 USER32.DLL
+_DispatchMessageA@4                 USER32.DLL
+_SetWindowTextA@8                   USER32.DLL
+_GetKeyState@4                      USER32.DLL
+_GetKeyboardState@4                 USER32.DLL
+_ToAscii@20                         USER32.DLL
+_DefWindowProcA@16                  USER32.DLL
+_GetMessagePos@0                    USER32.DLL
+_ChildWindowFromPoint@12            USER32.DLL
+_GetDC@4                            USER32.DLL
+_wglMakeCurrent@8                   OPENGL32.DLL
+_wglCreateContext@4                 OPENGL32.DLL
+_wglGetCurrentContext@0             OPENGL32.DLL
+_ReleaseDC@8                        USER32.DLL
+_IsIconic@4                         USER32.DLL
+_SetActiveWindow@4                  USER32.DLL
+_UpdateWindow@4                     USER32.DLL
+_TrackMouseEvent@4                  USER32.DLL
+_GetUpdateRect@12                   USER32.DLL
+_BeginPaint@8                       USER32.DLL
+_EndPaint@8                         USER32.DLL
+_PostQuitMessage@4                  USER32.DLL
+_SetCapture@4                       USER32.DLL
+_ReleaseCapture@0                   USER32.DLL
+_InvalidateRect@12                  USER32.DLL
+_GetModuleHandleA@4                 KERNEL32.DLL
+_GetProcAddress@8                   KERNEL32.DLL
+_SetWindowLongA@12                  USER32.DLL
+_IsZoomed@4                         USER32.DLL
+_SendMessageA@16                    USER32.DLL
+_GetWindowLongA@8                   USER32.DLL
+_MonitorFromWindow@8                USER32.DLL
+_GetMonitorInfoA@8                  USER32.DLL
+_OffsetRect@12                      USER32.DLL
+_SetWindowPos@28                    USER32.DLL
+_ShowWindow@8                       USER32.DLL
+_GetClassInfoA@12                   USER32.DLL
+_LoadIconA@8                        USER32.DLL
+_LoadCursorA@8                      USER32.DLL
+_RegisterClassA@4                   USER32.DLL
+_GetDesktopWindow@0                 USER32.DLL
+_GetDeviceCaps@8                    GDI32.DLL
+_CreateDCA@16                       GDI32.DLL
+_DeleteDC@4                         GDI32.DLL
+_timeBeginPeriod@4                  WINMM.DLL
+_timeEndPeriod@4                    WINMM.DLL
+_wglDeleteContext@4                 OPENGL32.DLL
+_ChoosePixelFormat@8                GDI32.DLL
+_wglGetCurrentDC@0                  OPENGL32.DLL
+_CreateWindowExA@48                 USER32.DLL
+_SetPixelFormat@12                  GDI32.DLL
+_DestroyWindow@4                    USER32.DLL
+_UnregisterClassA@8                 USER32.DLL
+_AdjustWindowRectEx@16              USER32.DLL
+_EnumDisplayMonitors@16             USER32.DLL
+_GetSystemPaletteEntries@16         GDI32.DLL
+_CreatePalette@4                    GDI32.DLL
+_SelectPalette@12                   GDI32.DLL
+_RealizePalette@4                   GDI32.DLL
+_ShowCursor@4                       USER32.DLL
+__NewExceptionFilter_               clbr20.dll
+___process_fini                     clbr20.dll
+____Argv                            clbr20.dll
+____Argc                            clbr20.dll
+__get_EFG_Format_                   mt7r20.dll
+___EFG_printf                       clbr20.dll
+__get_EFG_cnvs2d_                   mt7r20.dll
+___EFG_scanf                        clbr20.dll
+__LpCmdLine                         clbr20.dll
+__LpPgmName                         clbr20.dll
+_SetCursor@4                        USER32.DLL
+_SetClassLongA@12                   USER32.DLL
+_SetCursorPos@8                     USER32.DLL
+_GetCursorPos@4                     USER32.DLL
+_SetPaletteEntries@16               GDI32.DLL
+_UnrealizeObject@4                  GDI32.DLL
+_GetPaletteEntries@16               GDI32.DLL
+_joyGetPosEx@8                      WINMM.DLL
+_snprintf_                          clbr20.dll
+_RegOpenKeyExA@20                   ADVAPI32.DLL
+_RegQueryValueExA@24                ADVAPI32.DLL
+_RegCloseKey@4                      ADVAPI32.DLL
+_joyGetDevCapsA@12                  WINMM.DLL
+strncpy_                            clbr20.dll
+_RegOpenKeyA@12                     ADVAPI32.DLL
+_CreateFileA@28                     KERNEL32.DLL
+_GetCommState@8                     KERNEL32.DLL
+_GetCommTimeouts@8                  KERNEL32.DLL
+_BuildCommDCBA@8                    KERNEL32.DLL
+_SetCommState@8                     KERNEL32.DLL
+_SetCommTimeouts@8                  KERNEL32.DLL
+_CloseHandle@4                      KERNEL32.DLL
+_ReadFile@20                        KERNEL32.DLL
+_WriteFile@20                       KERNEL32.DLL
+_FlushFileBuffers@4                 KERNEL32.DLL
+_RegisterRawInputDevices@12         USER32.DLL
+_GetRawInputData@20                 USER32.DLL
+_GetRawInputDeviceInfoA@16          USER32.DLL
+_EnumDisplaySettingsA@12            USER32.DLL
+_ChangeDisplaySettingsExA@20        USER32.DLL
+sprintf_                            clbr20.dll
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\WATCOM\lib386\nt\kernel32.lib
+C:\WATCOM\lib386\nt\user32.lib
+C:\WATCOM\lib386\nt\gdi32.lib
+C:\WATCOM\lib386\nt\advapi32.lib
+C:\WATCOM\lib386\nt\opengl32.lib
+C:\WATCOM\lib386\nt\winmm.lib
+lib\freeglut_static.lib
+C:\WATCOM\lib386\emu387.lib
+C:\WATCOM\lib386\nt\mt7rdll.lib
+C:\WATCOM\lib386\nt\clbrdll.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  000938ba (604346.)
+Entry point address: 0040c8b2
+Link time: 00:00.72

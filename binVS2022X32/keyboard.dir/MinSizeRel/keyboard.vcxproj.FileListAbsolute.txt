@@ -1,0 +1,2 @@
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\bin\MinSizeRel\freeglut.dll
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\keyboard.dir\MinSizeRel\keyboard.vcxproj.Up2Date

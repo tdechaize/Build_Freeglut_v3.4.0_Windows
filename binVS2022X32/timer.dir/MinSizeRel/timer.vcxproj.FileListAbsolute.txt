@@ -1,0 +1,2 @@
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\bin\MinSizeRel\freeglut.dll
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\timer.dir\MinSizeRel\timer.vcxproj.Up2Date

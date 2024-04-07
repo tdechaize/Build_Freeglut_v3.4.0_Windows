@@ -1,0 +1,2 @@
+C:\src\OpenGL\freeglut-3.4.0\src\fg_callbacks.c(168): Warning! W303: Parameter 'userData' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_callbacks.c(203): Warning! W303: Parameter 'userData' has been defined, but not referenced

@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Demos Freeglut lcc32" />
+		<Option platforms="Windows;" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="lcc" />
+		<Build>
+			<Target title="Debug lcc 3dview">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/3dviewd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc 3dview">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/3dview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc CallbackMaker">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/CallbackMakerd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc CallbackMaker">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/CallbackMaker" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc fractals">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/fractalsd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-I.\include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc fractals">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/fractals" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc fractalsrandom">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/fractals_randomd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc fractalsrandom">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/fractals_random" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc One">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/Oned" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="lrc.exe -IC:\lcc\include -foobjlcc32\Debug\progs\demos\One\one.res  progs\demos\One\one.rc" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release lcc One">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/One" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="lrc.exe -IC:\lcc\include -foobjlcc32\Release\progs\demos\One\one.res  progs\demos\One\one.rc" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug lcc lorenz">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/lorenzd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc lorenz">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/lorenz" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc resizer">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/resizerd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-I.\include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc resizer">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/resizer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc multi-touch">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/multi-touchd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc multi-touch">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/multi-touch" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc shapes">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/shapesd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc shapes">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/shapes" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc smooth">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/smooth_opengl3d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc smooth">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/smooth_opengl3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc spaceball">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/spaceballd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc spaceball">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/spaceball" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc joystick">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/joystickd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc joystick">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/joystick" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc subwin">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/subwind" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc subwin">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/subwin" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc timer">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/timerd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc timer">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/timer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc timer_callback">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/timer_callbackd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc timer_callback">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/timer_callback" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc keyboard">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/keyboardd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc keyboard">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/keyboard" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug lcc indexed_color">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/indexed_colord" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Debug/freeglutd.lib" />
+				</Linker>
+			</Target>
+			<Target title="Release lcc indexed_color">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/indexed_color" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="1" />
+				<Option compiler="lcc" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="advapi32" />
+					<Add library="comdlg32" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="binlcc32/Release/freeglut.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="Demos all build lcc32" targets="Debug lcc 3dview;Release lcc 3dview;Debug lcc CallbackMaker;Release lcc CallbackMaker;Debug lcc fractals;Release lcc fractals;Debug lcc fractalsrandom;Release lcc fractalsrandom;Debug lcc One;Release lcc One;Debug lcc lorenz;Release lcc lorenz;Debug lcc resizer;Release lcc resizer;Debug lcc multi-touch;Release lcc multi-touch;Debug lcc shapes;Release lcc shapes;Debug lcc smooth;Release lcc smooth;Debug lcc spaceball;Release lcc spaceball;Debug lcc joystick;Release lcc joystick;Debug lcc subwin;Release lcc subwin;Release lcc timer;Debug lcc timer_callback;Release lcc timer_callback;Debug lcc keyboard;Release lcc keyboard;Debug lcc indexed_color;Release lcc indexed_color;" />
+		</VirtualTargets>
+		<Unit filename="include/GL/freeglut.h" />
+		<Unit filename="include/GL/freeglut_ext.h" />
+		<Unit filename="include/GL/freeglut_std.h" />
+		<Unit filename="include/GL/freeglut_ucall.h" />
+		<Unit filename="progs/demos/3dview/3dview.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc 3dview" />
+			<Option target="Release lcc 3dview" />
+		</Unit>
+		<Unit filename="progs/demos/CallbackMaker/CallbackMaker.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc CallbackMaker" />
+			<Option target="Release lcc CallbackMaker" />
+		</Unit>
+		<Unit filename="progs/demos/Fractals/fractals.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc fractals" />
+			<Option target="Release lcc fractals" />
+		</Unit>
+		<Unit filename="progs/demos/Fractals_random/fractals_random.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc fractalsrandom" />
+			<Option target="Release lcc fractalsrandom" />
+		</Unit>
+		<Unit filename="progs/demos/Lorenz/lorenz.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc lorenz" />
+			<Option target="Release lcc lorenz" />
+		</Unit>
+		<Unit filename="progs/demos/One/one.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc One" />
+			<Option target="Release lcc One" />
+		</Unit>
+		<Unit filename="progs/demos/One/one.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="Debug lcc One" />
+			<Option target="Release lcc One" />
+		</Unit>
+		<Unit filename="progs/demos/indexed_color/idxcol.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc indexed_color" />
+			<Option target="Release lcc indexed_color" />
+		</Unit>
+		<Unit filename="progs/demos/joystick/joystick.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc joystick" />
+			<Option target="Release lcc joystick" />
+		</Unit>
+		<Unit filename="progs/demos/keyboard/keyboard.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc keyboard" />
+			<Option target="Release lcc keyboard" />
+		</Unit>
+		<Unit filename="progs/demos/multi-touch/multi-touch.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc multi-touch" />
+			<Option target="Release lcc multi-touch" />
+		</Unit>
+		<Unit filename="progs/demos/resizer/resizer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc resizer" />
+			<Option target="Release lcc resizer" />
+		</Unit>
+		<Unit filename="progs/demos/shapes/glmatrix.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc shapes" />
+			<Option target="Release lcc shapes" />
+		</Unit>
+		<Unit filename="progs/demos/shapes/shapes.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc shapes" />
+			<Option target="Release lcc shapes" />
+		</Unit>
+		<Unit filename="progs/demos/smooth_opengl3/smooth_opengl3.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc smooth" />
+			<Option target="Release lcc smooth" />
+		</Unit>
+		<Unit filename="progs/demos/spaceball/spaceball.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc spaceball" />
+			<Option target="Release lcc spaceball" />
+		</Unit>
+		<Unit filename="progs/demos/spaceball/vmath.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc spaceball" />
+			<Option target="Release lcc spaceball" />
+		</Unit>
+		<Unit filename="progs/demos/subwin/subwin.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc subwin" />
+			<Option target="Release lcc subwin" />
+		</Unit>
+		<Unit filename="progs/demos/timer/timer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc timer" />
+			<Option target="Release lcc timer" />
+		</Unit>
+		<Unit filename="progs/demos/timer_callback/timer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug lcc timer_callback" />
+			<Option target="Release lcc timer_callback" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

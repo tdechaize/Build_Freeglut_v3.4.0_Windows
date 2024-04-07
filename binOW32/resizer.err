@@ -1,0 +1,4 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\resizer\resizer.c(49): Warning! W303: Parameter 'unused' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\resizer\resizer.c(55): Warning! W303: Parameter 'nMouseX' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\resizer\resizer.c(55): Warning! W303: Parameter 'nMouseY' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\resizer\resizer.c(332): Warning! W303: Parameter 'unused' has been defined, but not referenced

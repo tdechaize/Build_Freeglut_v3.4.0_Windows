@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release lcc" />
+	<File name="src\fg_spaceball.c" open="1" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="527" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\fg_videoresize.c" open="1" top="0" tabpos="38" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1889" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\GL\freeglut.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\fg_init.c" open="1" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23832" topLine="687" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_main_mswin.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1374" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_cursor_mswin.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3442" topLine="101" />
+		</Cursor>
+	</File>
+	<File name="src\fg_gl2.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2365" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\fg_stroke_mono_roman.c" open="1" top="0" tabpos="36" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="749" topLine="36" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_internal_mswin.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5438" topLine="97" />
+		</Cursor>
+	</File>
+	<File name="src\fg_internal.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3877" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="src\fg_window.c" open="1" top="0" tabpos="39" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15757" topLine="415" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_window_mswin.c" open="1" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="29333" topLine="841" />
+		</Cursor>
+	</File>
+	<File name="src\fg_main.c" open="1" top="0" tabpos="32" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15226" topLine="493" />
+		</Cursor>
+	</File>
+	<File name="src\fg_stroke_roman.c" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="532" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\fg_menu.c" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28999" topLine="637" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_display_mswin.c" open="1" top="0" tabpos="41" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\fg_callbacks.c" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1704" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="src\util\xparsegeometry_repl.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="src\fg_display.c" open="1" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3052" topLine="55" />
+		</Cursor>
+	</File>
+	<File name="src\fg_init.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_spaceball_mswin.c" open="1" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1702" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="src\fg_overlay.c" open="1" top="0" tabpos="34" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1535" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\fg_font_data.c" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="40965" topLine="999" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_input_devices_mswin.c" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1379" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="src\fg_gamemode.c" open="1" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4505" topLine="94" />
+		</Cursor>
+	</File>
+	<File name="src\fg_state.c" open="1" top="0" tabpos="35" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11028" topLine="173" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_init_mswin.c" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6004" topLine="128" />
+		</Cursor>
+	</File>
+	<File name="include\GL\freeglut_ucall.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="844" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="src\fg_input_devices.c" open="1" top="0" tabpos="31" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="158" />
+		</Cursor>
+	</File>
+	<File name="src\fg_teapot.c" open="1" top="0" tabpos="37" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23803" topLine="521" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_state_mswin.c" open="1" top="0" tabpos="44" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="331" />
+		</Cursor>
+	</File>
+	<File name="src\fg_ext.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9429" topLine="20" />
+		</Cursor>
+	</File>
+	<File name="src\fg_gl2.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2487" topLine="28" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_menu_mswin.c" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3460" topLine="64" />
+		</Cursor>
+	</File>
+	<File name="src\fg_joystick.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1510" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_cmap_mswin.c" open="1" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="37" />
+		</Cursor>
+	</File>
+	<File name="src\util\xparsegeometry_repl.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="113" />
+		</Cursor>
+	</File>
+	<File name="src\fg_font.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3016" topLine="55" />
+		</Cursor>
+	</File>
+	<File name="src\fg_structure.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="640" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_gamemode_mswin.c" open="1" top="0" tabpos="43" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="139" />
+		</Cursor>
+	</File>
+	<File name="src\fg_callback_macros.h" open="1" top="0" tabpos="45" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12609" topLine="235" />
+		</Cursor>
+	</File>
+	<File name="src\fg_misc.c" open="1" top="0" tabpos="33" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5696" topLine="151" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_ext_mswin.c" open="1" top="0" tabpos="42" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="7" />
+		</Cursor>
+	</File>
+	<File name="include\GL\freeglut_ext.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5204" topLine="162" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_structure_mswin.c" open="1" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1403" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\fg_geometry.c" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="47492" topLine="1185" />
+		</Cursor>
+	</File>
+	<File name="src\mswin\fg_joystick_mswin.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="215" />
+		</Cursor>
+	</File>
+	<File name="src\fg_cursor.c" open="1" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2086" topLine="35" />
+		</Cursor>
+	</File>
+	<File name="include\GL\freeglut_std.h" open="1" top="1" tabpos="46" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3003" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

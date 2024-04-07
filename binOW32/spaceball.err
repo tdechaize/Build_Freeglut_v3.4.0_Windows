@@ -1,0 +1,4 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\spaceball.c(136): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\spaceball.c(136): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\spaceball.c(170): Warning! W303: Parameter 'bn' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\vmath.inl(36): Warning! W202: Symbol 'quat_mul' has been defined, but not referenced

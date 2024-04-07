@@ -1,0 +1,2 @@
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\bin\RelWithDebInfo\freeglut.dll
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\Fractals_random.dir\RelWithDebInfo\Fractals.4D6BF070.Up2Date

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1711204519 source:c:\src\opengl\freeglut-3.4.0\progs\demos\keyboard\keyboard.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<GL/freeglut.h>
+

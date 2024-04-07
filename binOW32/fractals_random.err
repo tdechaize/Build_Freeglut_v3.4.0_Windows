@@ -1,0 +1,15 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(63): Warning! W303: Parameter 'n1' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(63): Warning! W303: Parameter 'n0' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(63): Warning! W303: Parameter 'm10' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(63): Warning! W303: Parameter 'm11' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(63): Warning! W303: Parameter 'm00' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(63): Warning! W303: Parameter 'm01' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(63): Warning! W303: Parameter 'num' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(124): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(124): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(151): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(151): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(211): Warning! W303: Parameter 'button' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(245): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(245): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\Fractals_random\fractals_random.c(245): Warning! W303: Parameter 'wheel_number' has been defined, but not referenced

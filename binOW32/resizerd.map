@@ -1,0 +1,206 @@
+Open Watcom Linker Version 2.0 beta Nov  8 2023 01:50:13 (32-bit)
+Copyright (c) 2002-2023 The Open Watcom Contributors. All Rights Reserved.
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       24/04/02 15:24:36
+Executable Image: bin\resizerd.exe
+creating a Windows NT character-mode executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+.idata                          00403000             0000074e
+DGROUP                          00404000             0000101c
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE           AUTO           00401000        00000007
+_TEXT                  CODE           AUTO           00401010        00001241
+TRANSFER CODE          CODE           AUTO           00402254        0000017a
+.idata                 .idata         .idata         00403000        0000074e
+_NULL                  BEGDATA        DGROUP         00404000        00000004
+_AFTERNULL             BEGDATA        DGROUP         00404004        00000000
+CONST                  DATA           DGROUP         00404004        00000308
+CONST2                 DATA           DGROUP         0040430c        00000000
+_DATA                  DATA           DGROUP         0040430c        00000010
+XIB                    DATA           DGROUP         0040431c        00000000
+XI                     DATA           DGROUP         0040431c        00000018
+XIE                    DATA           DGROUP         00404334        00000000
+YIB                    DATA           DGROUP         00404334        00000000
+YI                     DATA           DGROUP         00404334        0000000c
+YIE                    DATA           DGROUP         00404340        00000000
+TIB                    DATA           DGROUP         00404340        00000000
+TI                     DATA           DGROUP         00404340        00000000
+TIE                    DATA           DGROUP         00404340        00000000
+DATA                   DATA           DGROUP         00404340        00000000
+_BSS                   BSS            DGROUP         00405000        0000001c
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: CMakeFiles\resizer.dir\progs\demos\resizer\resizer.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\resizer\resizer.c)
+00401010+      DrawQuad_
+004010e5+      UnhideTimer_
+00401119+      ChangeTitleTimer_
+00401155+      SampleKeyboard_
+004018b2*      Idle_
+004018d9+      Reshape_
+00401a64+      Position_
+00401ada+      WindowStatus_
+00401b1e+      Redisplay_
+00401c3f+      Timer_
+00401d31       main_
+0040430c+      _nChildWindow
+00404310+      _nLoopMain
+00404314+      _bChildPosDone
+00404315+      _bChildSizeDone
+00405000+      _nWindow
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(cstrtwnt)
+00401e6c       _cstart_
+00401e6c*      mainCRTStartup
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(fltuse80.c)
+00404318       _fltused_
+Module: C:\WATCOM\lib386\emu387.lib(386stub.asm)
+00401f00       __init_387_emulator
+00401f01*      __fini_387_emulator
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(argcv.c)
+00405004       __argv
+00405008       __argc
+0040500c       ___argc
+00405010       ___argv
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(main3wnt.c)
+00401f10       __NTMain
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(segdefns)
+00401003       ___begtext
+00404000*      __nullarea
+0040431c       __Start_XI
+00404334       __End_XI
+00404334       __Start_YI
+00404340       __End_YI
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dsetefg.c)
+00401f50       __setEFGfmt_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dinitarg.c)
+00402110       __Init_Argv_
+00402170       __Fini_Argv_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(initrtns.c)
+004021a0       __InitRtns
+004021f0       __FiniRtns
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dcinit.c)
+00402250       __CommonInit_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dosseg)
+00001234       __DOSseg__
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(histsplt.c)
+00405018       ___historical_splitparms
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+__CHK                               clbr20.dll
+__CHP                               mt7r20.dll
+_gluOrtho2D@32                      GLU32.DLL
+__8087                              clbr20.dll
+_glutGet@4                          freeglutd.dll
+_glBegin@4                          OPENGL32.DLL
+_glVertex2d@16                      OPENGL32.DLL
+_glEnd@0                            OPENGL32.DLL
+_glutSetWindow@4                    freeglutd.dll
+_glutShowWindow@0                   freeglutd.dll
+_glutSetIconTitle@4                 freeglutd.dll
+_glutSetWindowTitle@4               freeglutd.dll
+_glutLeaveMainLoop@0                freeglutd.dll
+printf_                             clbr20.dll
+_glutFullScreenToggle@0             freeglutd.dll
+_glutReshapeWindow@8                freeglutd.dll
+_glutPositionWindow@8               freeglutd.dll
+_glutCreateSubWindow@20             freeglutd.dll
+_glutKeyboardFunc@4                 freeglutd.dll
+_glutDisplayFunc@4                  freeglutd.dll
+_glutReshapeFunc@4                  freeglutd.dll
+_glutPositionFunc@4                 freeglutd.dll
+_glutWindowStatusFunc@4             freeglutd.dll
+_glutDestroyWindow@4                freeglutd.dll
+_glutIconifyWindow@0                freeglutd.dll
+_glutTimerFunc@12                   freeglutd.dll
+_glutHideWindow@0                   freeglutd.dll
+_glutSetCursor@4                    freeglutd.dll
+_glutPostRedisplay@0                freeglutd.dll
+_glutGetWindow@0                    freeglutd.dll
+_glViewport@16                      OPENGL32.DLL
+_glMatrixMode@4                     OPENGL32.DLL
+_glLoadIdentity@0                   OPENGL32.DLL
+_glClearColor@16                    OPENGL32.DLL
+_glColor3f@12                       OPENGL32.DLL
+_glutPostWindowRedisplay@4          freeglutd.dll
+_glClear@4                          OPENGL32.DLL
+_glGetIntegerv@8                    OPENGL32.DLL
+_glutBitmapHeight@4                 freeglutd.dll
+_glRasterPos2i@8                    OPENGL32.DLL
+_glutBitmapString@8                 freeglutd.dll
+_glutSwapBuffers@0                  freeglutd.dll
+_glutInit@8                         freeglutd.dll
+_glutInitDisplayMode@4              freeglutd.dll
+_glutSetOption@8                    freeglutd.dll
+_glutInitWindowPosition@8           freeglutd.dll
+_glutInitWindowSize@8               freeglutd.dll
+_glutCreateWindow@4                 freeglutd.dll
+_glutMainLoop@0                     freeglutd.dll
+_SetLD80bit_                        clbr20.dll
+__NewExceptionFilter_               clbr20.dll
+___process_fini                     clbr20.dll
+____Argv                            clbr20.dll
+____Argc                            clbr20.dll
+exit_                               clbr20.dll
+__get_EFG_Format_                   mt7r20.dll
+___EFG_printf                       clbr20.dll
+__get_EFG_cnvs2d_                   mt7r20.dll
+___EFG_scanf                        clbr20.dll
+malloc_                             clbr20.dll
+__LpCmdLine                         clbr20.dll
+__LpPgmName                         clbr20.dll
+free_                               clbr20.dll
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\WATCOM\lib386\nt\glu32.lib
+C:\WATCOM\lib386\nt\opengl32.lib
+lib\freeglutd.lib
+C:\WATCOM\lib386\emu387.lib
+C:\WATCOM\lib386\nt\mt7rdll.lib
+C:\WATCOM\lib386\nt\clbrdll.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  2b38 (11064.)
+Entry point address: 00401e6c
+Link time: 00:00.63

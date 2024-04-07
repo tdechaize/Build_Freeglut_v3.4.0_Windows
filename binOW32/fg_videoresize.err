@@ -1,0 +1,9 @@
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(37): Warning! W303: Parameter 'eWhat' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(40): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(40): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(40): Warning! W303: Parameter 'w' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(40): Warning! W303: Parameter 'h' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(41): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(41): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(41): Warning! W303: Parameter 'w' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\fg_videoresize.c(41): Warning! W303: Parameter 'h' has been defined, but not referenced

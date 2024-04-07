@@ -1,0 +1,32 @@
+Error when run demo "One" compiled with Borland C/C++ 5.5.2 (last freeware version) on Windows 11 Family 23H2.
+
+Testing game mode string parsing, don't panic!
+freeglut (C:\src\OpenGL\freeglut-3.4.0\binBC55\bin\One.exe): unable to parse game mode string `Toudi glupcze, Danwin bedzie moj!'
+freeglut (C:\src\OpenGL\freeglut-3.4.0\binBC55\bin\One.exe): The graphics mode is not supported. Problem with requested mode: 640x480:37@300
+freeglut (C:\src\OpenGL\freeglut-3.4.0\binBC55\bin\One.exe): failed to change screen settings
+current window is 800x600 at (0,0)
+The current window has 8 red bits, 8 green bits, 8 blue bits and 8 alpha bits for a total buffer size of 40 bits
+It furthermore has 24 depth bits and 8 stencil bits
+Window 8 Entry Callback: 1
+
+After suppress code  "  glutGameModeString( "Toudi glupcze, Danwin bedzie moj!" );"   when compiler Borland C/C++ in source code "one.c", same error 
+
+Testing game mode string parsing, don't panic!
+freeglut (C:\src\OpenGL\freeglut-3.4.0\binBC55\bin\One.exe): The graphics mode is not supported. Problem with requested mode: 640x480:37@300
+freeglut (C:\src\OpenGL\freeglut-3.4.0\binBC55\bin\One.exe): failed to change screen settings
+current window is 800x600 at (0,0)
+The current window has 8 red bits, 8 green bits, 8 blue bits and 8 alpha bits for a total buffer size of 40 bits
+It furthermore has 24 depth bits and 8 stencil bits
+Window 8 Entry Callback: 1
+
+I don't know resolve this. 
+
+Please investigate this anomaly ?
+
+Thank's.
+
+PS : My reolution of screen on my laptop is : 1920 x 1080, 144,03 Mhz
+			Deepth of color : 	8 bits
+			Format of colours : RVB
+			
+PS2 : All other demos run correctly.

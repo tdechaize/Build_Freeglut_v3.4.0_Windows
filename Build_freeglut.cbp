@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="freeglut" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Mingw32 official">
+				<Option output="binMingW32of/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingW32of/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<ExtraCommands>
+					<Add before="cmd /c echo.  *********  Quelques caracteristiques du systeme hebergeant l&apos;environnement de developpement.   ***********" />
+					<Add before="cmd /c WMIC OS GET Name" />
+					<Add before="cmd /c WMIC OS GET Version" />
+					<Add before="cmd /c WMIC OS GET OSArchitecture" />
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingW32of\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release Mingw32 official">
+				<Option output="binMingW32of/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingW32of/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingW32of\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug Mingw64 CB">
+				<Option platforms="Windows;" />
+				<Option output="binMingw64CB/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingw64CB/Debug/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_cb" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-march=core2" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingw64CB\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release Mingw64 CB">
+				<Option platforms="Windows;" />
+				<Option output="binMingw64CB/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingw64CB/Release/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_cb" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingw64CB\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug Mingw64 Dev-Cpp">
+				<Option platforms="Windows;" />
+				<Option output="binDevCpp/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objDevCpp/Debug/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_dev" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binDevCpp\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release Mingw64 Dev-Cpp">
+				<Option platforms="Windows;" />
+				<Option output="binDevCpp/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objDevCpp/Release/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_dev" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binDevCpp\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CYGWIN 32">
+				<Option platforms="Windows;" />
+				<Option output="binCYGWIN32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCYGWIN32/Debug" />
+				<Option type="3" />
+				<Option compiler="cygwin_gcc_32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows" />
+					<Add option="-Wl,--export-all-symbols" />
+					<Add option="-Wl,--enable-auto-import" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="i686-w64-mingw32-gcc.exe --version" />
+					<Add after="cmd /c type binCYGWIN32\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CYGWIN 32">
+				<Option platforms="Windows;" />
+				<Option output="binCYGWIN32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCYGWIN32/Release/" />
+				<Option type="3" />
+				<Option compiler="cygwin_gcc_32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="i686-w64-mingw32-gcc.exe --version" />
+					<Add after="cmd /c type binCYGWIN32\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CYGWIN 64">
+				<Option platforms="Windows;" />
+				<Option output="binCYGWIN64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCYGWIN64/Debug" />
+				<Option type="3" />
+				<Option compiler="cygwin" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="x86_64-w64-mingw32-gcc.exe --version" />
+					<Add after="cmd /c type binCYGWIN64\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CYGWIN 64">
+				<Option platforms="Windows;" />
+				<Option output="binCYGWIN64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCYGWIN64/Release/" />
+				<Option type="3" />
+				<Option compiler="cygwin" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-mwindows" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="x86_64-w64-mingw32-gcc.exe --version" />
+					<Add after="cmd /c type binCYGWIN64\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug Mingw32 wl">
+				<Option platforms="Windows;" />
+				<Option output="binMingw32wl/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingw32wl/Debug/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_mingw32_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingw32wl\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release Mingw32 wl">
+				<Option platforms="Windows;" />
+				<Option output="binMingw32wl/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingw32wl/Release/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_mingw32_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingw32wl\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug Mingw64 wl">
+				<Option platforms="Windows;" />
+				<Option output="binMingw64wl/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingw64wl/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc-mingw64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingw64wl\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release Mingw64 wl">
+				<Option platforms="Windows;" />
+				<Option output="binMingw64wl/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMingw64wl/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc-mingw64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMingw64wl\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug TDM MinGW32">
+				<Option platforms="Windows;" />
+				<Option output="binTDMW32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objTDMW32/Debug" />
+				<Option type="3" />
+				<Option compiler="tdm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-std=c99" />
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binTDMW32\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release TDM MinGW32">
+				<Option platforms="Windows;" />
+				<Option output="binTDMW32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objTDMW32/Release" />
+				<Option type="3" />
+				<Option compiler="tdm_gcc_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c99" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binTDMW32\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug TDM MinGW64">
+				<Option platforms="Windows;" />
+				<Option output="binTDMW64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objTDMW64/Debug" />
+				<Option type="3" />
+				<Option compiler="tdm_gcc_x64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-march=core2" />
+					<Add option="-g" />
+					<Add option="-std=c99" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binTDMW64\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release TDM MinGW64">
+				<Option platforms="Windows;" />
+				<Option output="binTDMW64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objTDMW64/Release" />
+				<Option type="3" />
+				<Option compiler="tdm_gcc_x64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-march=core2" />
+					<Add option="-O2" />
+					<Add option="-std=c99" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binTDMW64\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug MSYS2W32">
+				<Option platforms="Windows;" />
+				<Option output="binMSYS2W32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMSYS2W32/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc-msys2-mingw32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMSYS2W32\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release MSYS2W32">
+				<Option platforms="Windows;" />
+				<Option output="binMSYS2W32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMSYS2W32/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc-msys2-mingw32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMSYS2W32\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug MSYS2W64">
+				<Option platforms="Windows;" />
+				<Option output="binMSYS2W64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMSYS2W64/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc-msys2-mingw64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMSYS2W64\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release MSYS2W64">
+				<Option platforms="Windows;" />
+				<Option output="binMSYS2W64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMSYS2W64/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc-msys2-mingw64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMSYS2W64\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug MSYS2 UCRT64">
+				<Option platforms="Windows;" />
+				<Option output="binMSYS2U64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMSYS2U64/Debug/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_msys_ucrt64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMSYS2W64\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release MSYS2 UCRT64">
+				<Option platforms="Windows;" />
+				<Option output="binMSYS2U64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objMSYS2U64/Release/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_msys_ucrt64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="gcc --version" />
+					<Add after="cmd /c type binMSYS2W64\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug VS2022 X32">
+				<Option platforms="Windows;" />
+				<Option output="binVS2022X32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objVS2022X32/Debug" />
+				<Option type="3" />
+				<Option compiler="microsoft_visual_c_2022" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/ZI" />
+					<Add option="-D" />
+					<Add option="-g" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="dumpbin /exports binVS2022X32\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release VS2022 X32">
+				<Option platforms="Windows;" />
+				<Option output="binVS2022X32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objVS2022X32/Release/" />
+				<Option type="3" />
+				<Option compiler="microsoft_visual_c_2022" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/TC" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="dumpbin /exports binVS2022X32\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug VS2022 X64">
+				<Option output="binVS2022X64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objVS2022X64/Debug/" />
+				<Option type="3" />
+				<Option compiler="microsoft_visual_c_2022_x64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/TC" />
+					<Add option="/Zi" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="dumpbin /exports binVS2022X64\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release VS2022 X64">
+				<Option output="binVS2022X64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objVS2022X64/Release/" />
+				<Option type="3" />
+				<Option compiler="microsoft_visual_c_2022_x64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/TC" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="kernel32" />
+					<Add library="user32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="dumpbin /exports binVS2022X64\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug BorlandC">
+				<Option output="binBC55/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objBC55/Debug/" />
+				<Option type="3" />
+				<Option compiler="bcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-tWD" />
+					<Add option="-6" />
+					<Add option="-y" />
+					<Add option="-v" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="-v" />
+					<Add option="/Gi" />
+					<Add library="kernel32" />
+					<Add library="cw32i" />
+					<Add library="user32" />
+					<Add library="import32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="impdef binBC55\Debug\freeglutd.def binBC55\Debug\freeglutd.dll" />
+					<Add after="cmd /c type binBC55\Debug\freeglutd.def" />
+				</ExtraCommands>
+				<Environment>
+					<Variable name="def_file_bcc" value="src\freeglut_bcc.def" />
+				</Environment>
+			</Target>
+			<Target title="Release BorlandC">
+				<Option output="binBC55/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objBC55/Release/" />
+				<Option type="3" />
+				<Option compiler="bcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-tWD" />
+					<Add option="-6" />
+					<Add option="-v-" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/Gi" />
+					<Add library="kernel32" />
+					<Add library="cw32i" />
+					<Add library="user32" />
+					<Add library="import32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="impdef binBC55\Release\freeglut.def binBC55\Release\freeglut.dll" />
+					<Add after="cmd /c type binBC55\Release\freeglut.def" />
+				</ExtraCommands>
+				<Environment>
+					<Variable name="def_file_bcc" value="src\freeglut_bcc.def" />
+				</Environment>
+			</Target>
+			<Target title="Debug DMC">
+				<Option platforms="Windows;" />
+				<Option output="binDMC/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objDMC/Debug/" />
+				<Option type="3" />
+				<Option compiler="dmc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-WD" />
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+					<Add option="-DWIN32" />
+					<Add option="-D__DMC__" />
+				</Compiler>
+				<Linker>
+					<Add option="/IMPL:binDMC\Debug\freeglutd.lib" />
+					<Add option="/DEBUG" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="libunres -p binDMC\Debug\freeglutd.lib" />
+				</ExtraCommands>
+				<Environment>
+					<Variable name="def_file_dmc" value="src\freeglut_dmc.def" />
+				</Environment>
+			</Target>
+			<Target title="Release DMC">
+				<Option platforms="Windows;" />
+				<Option output="binDMC/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objDMC/Release/" />
+				<Option type="3" />
+				<Option compiler="dmc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-WD" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="/IMPL:binDMC\Release\freeglut.lib" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="libunres -p binDMC\Release\freeglut.lib" />
+				</ExtraCommands>
+				<Environment>
+					<Variable name="def_file_dmc" value="src\freeglut_dmc.def" />
+				</Environment>
+			</Target>
+			<Target title="Debug lcc">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Debug/" />
+				<Option type="3" />
+				<Option compiler="lcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-I.\include" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+				</Compiler>
+				<Linker>
+					<Add option="-subsystem windows" />
+					<Add option="-nounderscores" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="lrc.exe -IC:\lcc\include -foobjlcc32\Debug\altbuild\freeglut.res  altbuild\freeglut.rc" />
+					<Add after="pedump /EXP binlcc32\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release lcc">
+				<Option platforms="Windows;" />
+				<Option output="binlcc32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc32/Release/" />
+				<Option type="3" />
+				<Option compiler="lcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-I.\include" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+				</Compiler>
+				<Linker>
+					<Add option="-subsystem windows" />
+					<Add option="-nounderscores" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="lrc.exe -IC:\lcc\include -foobjlcc32\Release\altbuild\freeglut.res  altbuild\freeglut.rc" />
+					<Add after="pedump /EXP binlcc32\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug lcc64">
+				<Option platforms="Windows;" />
+				<Option output="binlcc64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc64/Debug/" />
+				<Option type="3" />
+				<Option compiler="lcc_compiler_64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="-D__LCC64__" />
+				</Compiler>
+				<Linker>
+					<Add option="-subsystem windows" />
+					<Add option="src\freeglut_lcc.def" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="pedump /EXP binlcc64\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release lcc64">
+				<Option platforms="Windows;" />
+				<Option output="binlcc64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objlcc64/Release/" />
+				<Option type="3" />
+				<Option compiler="lcc_compiler_64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+					<Add option="-D_WIN32_WINNT=0x0501" />
+					<Add option="-D__LCC64__" />
+				</Compiler>
+				<Linker>
+					<Add option="-subsystem windows" />
+					<Add option="src\freeglut_lcc.def" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="pedump /EXP binlcc64\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug OW 32">
+				<Option platforms="Windows;" />
+				<Option output="binOW32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objOW32/Debug" />
+				<Option type="3" />
+				<Option compiler="ow" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-bd" />
+					<Add option="-d2" />
+					<Add option="-bt=nt" />
+					<Add option="-ecc" />
+					<Add option="-d_DEBUG" />
+					<Add option="-dDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-d_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="initinstance terminstance" />
+					<Add option="run win" />
+					<Add option="EXPORT=src\freeglut_ow.lbc" />
+					<Add option="option implib=binOW32\Debug\freeglutd.lib" />
+					<Add option="-def:binOW32\Debug\freeglutd.def" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="wdump /i binOW32\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release OW 32">
+				<Option platforms="Windows;" />
+				<Option output="binOW32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objOW32/Release/" />
+				<Option type="3" />
+				<Option compiler="ow" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-bd" />
+					<Add option="-d0" />
+					<Add option="-bt=nt" />
+					<Add option="-ecc" />
+					<Add option="-dNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-d_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="initinstance terminstance" />
+					<Add option="run win" />
+					<Add option="EXPORT=src\freeglut_ow.lbc" />
+					<Add option="option implib=binOW32\Release\freeglut.lib" />
+					<Add option="-def:binOW32\Release\freeglut.def" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="wdump /i binOW32\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug OW 64">
+				<Option platforms="Windows;" />
+				<Option output="binOW64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objOW64/Debug" />
+				<Option type="3" />
+				<Option compiler="openwatcom_w64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-bd" />
+					<Add option="-d2" />
+					<Add option="-bt=nt" />
+					<Add option="-ecc" />
+					<Add option="-d_DEBUG" />
+					<Add option="-dDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-d_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="initinstance terminstance" />
+					<Add option="run win" />
+					<Add option="EXPORT=src\freeglut_ow.lbc" />
+					<Add option="option implib=binOW64\Debug\freeglutd.lib" />
+					<Add option="-def:binOW64\Debug\freeglutd.def" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="wdump /i binOW64\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release OW 64">
+				<Option platforms="Windows;" />
+				<Option output="binOW64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objOW64/Release/" />
+				<Option type="3" />
+				<Option compiler="openwatcom_w64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-bd" />
+					<Add option="-d0" />
+					<Add option="-bt=nt" />
+					<Add option="-ecc" />
+					<Add option="-dNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-d_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add option="initinstance terminstance" />
+					<Add option="run win" />
+					<Add option="EXPORT=src\freeglut_ow.lbc" />
+					<Add option="option implib=binOW64\Release\freeglut.lib" />
+					<Add option="-def:binOW64\Release\freeglut.def" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="wdump /i binOW64\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug PELLES C">
+				<Option platforms="Windows;" />
+				<Option output="binPELLESC32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objPELLESC32/Debug" />
+				<Option type="3" />
+				<Option compiler="pelles_c_2021" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DDEBUG" />
+					<Add option="/DFREEGLUT_EXPORTS" />
+					<Add option="/D_WIN32" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx86-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add option="/dll" />
+					<Add option="/MACHINE:X86" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="podump /exports binPELLESC32\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release PELLES C">
+				<Option platforms="Windows;" />
+				<Option output="binPELLESC32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objPELLESC32/Release/" />
+				<Option type="3" />
+				<Option compiler="pelles_c_2021" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DFREEGLUT_EXPORTS" />
+					<Add option="/D_WIN32" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx86-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/dll" />
+					<Add option="/MACHINE:X86" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="podump /exports binPELLESC32\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug PELLES C 64">
+				<Option platforms="Windows;" />
+				<Option output="binPELLESC64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objPELLESC64/Debug" />
+				<Option type="3" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Zi" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/D_DEBUG" />
+					<Add option="/DDEBUG" />
+					<Add option="/DFREEGLUT_EXPORTS" />
+					<Add option="/D_WIN32" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/debug" />
+					<Add option="/dll" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="podump /exports binPELLESC64\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release PELLES C 64">
+				<Option platforms="Windows;" />
+				<Option output="binPELLESC64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objPELLESC64/Release/" />
+				<Option type="3" />
+				<Option compiler="pelles_c_2021_64b" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="/Gd" />
+					<Add option="/Ze" />
+					<Add option="/c" />
+					<Add option="/I.\include" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DFREEGLUT_EXPORTS" />
+					<Add option="/D_WIN32" />
+					<Add option="/D_WIN32_WINNT=0x0501" />
+					<Add option="/Tx64-coff" />
+				</Compiler>
+				<Linker>
+					<Add option="/dll" />
+					<Add option="/MACHINE:X64" />
+					<Add library="glu32" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="advapi32" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="podump /exports binPELLESC64\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CLANG Mingw32">
+				<Option output="binCLANGW32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGW32/Debug/" />
+				<Option type="3" />
+				<Option compiler="llvm_clang_compiler_w32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGW32\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CLANG Mingw32">
+				<Option output="binCLANGW32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGW32/release/" />
+				<Option type="3" />
+				<Option compiler="llvm_clang_compiler_w32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGW32\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CLANG Mingw64">
+				<Option platforms="Windows;" />
+				<Option output="binCLANGW64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGW64/Debug/" />
+				<Option type="3" />
+				<Option compiler="clang" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGW64\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CLANG Mingw64">
+				<Option platforms="Windows;" />
+				<Option output="binCLANGW64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGW64/Release/" />
+				<Option type="3" />
+				<Option compiler="clang" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGW64\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CLANG MSX32">
+				<Option platforms="Windows;" />
+				<Option output="binCLANGX32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGX32/Debug/" />
+				<Option type="3" />
+				<Option compiler="llvm_clang_compiler_x32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="kernel32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="llvm-readobj.exe --coff-exports binCLANGX32\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CLANG MSX32">
+				<Option platforms="Windows;" />
+				<Option output="binCLANGX32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGX32/Release/" />
+				<Option type="3" />
+				<Option compiler="llvm_clang_compiler_x32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="kernel32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="llvm-readobj.exe --coff-exports binCLANGX32\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CLANG MSX64">
+				<Option platforms="Windows;" />
+				<Option output="binCLANGX64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGX64/Debug/" />
+				<Option type="3" />
+				<Option compiler="llvm_clang_compiler_x64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="kernel32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="llvm-readobj.exe --coff-exports binCLANGX64\Debug\freeglutd.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CLANG MSX64">
+				<Option platforms="Windows;" />
+				<Option output="binCLANGX64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGX64/Release/" />
+				<Option type="3" />
+				<Option compiler="llvm_clang_compiler_x64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+					<Add library="kernel32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="llvm-readobj.exe --coff-exports binCLANGX64\Release\freeglut.dll" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CLANG MSYS W32">
+				<Option output="binCLANGMW32/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGMW32/Debug/" />
+				<Option type="3" />
+				<Option compiler="clang_msys_w32_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGMW32\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CLANG MSYS W32">
+				<Option output="binCLANGMW32/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGMW32/release/" />
+				<Option type="3" />
+				<Option compiler="clang_msys_w32_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGMW32\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug CLANG MSYS W64">
+				<Option output="binCLANGMW64/Debug/freeglutd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGMW64/Debug/" />
+				<Option type="3" />
+				<Option compiler="clang_msys_w64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGMW64\Debug\libfreeglutd.def" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release CLANG MSYS W64">
+				<Option output="binCLANGMW64/Release/freeglut" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objCLANGMW64/release/" />
+				<Option type="3" />
+				<Option compiler="clang_msys_w64_compiler" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DNDEBUG" />
+					<Add option="-DFREEGLUT_EXPORTS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+				<Linker>
+					<Add library="libkernel32" />
+					<Add library="libuser32" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="clang --version" />
+					<Add after="cmd /c type binCLANGMW64\Release\libfreeglut.def" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="BUILD DLL All build" targets="Debug Mingw32 official;Release Mingw32 official;Debug Mingw64 CB;Release Mingw64 CB;Debug Mingw64 Dev-Cpp;Release Mingw64 Dev-Cpp;Debug CYGWIN 32;Release CYGWIN 32;Debug CYGWIN 64;Release CYGWIN 64;Debug Mingw32 wl;Release Mingw32 wl;Debug Mingw64 wl;Release Mingw64 wl;Debug TDM MinGW32;Release TDM MinGW32;Debug TDM MinGW64;Release TDM MinGW64;Debug MSYS2W32;Release MSYS2W32;Debug MSYS2W64;Release MSYS2W64;Debug MSYS2 UCRT64;Release MSYS2 UCRT64;Debug VS2022 X32;Release VS2022 X32;Debug VS2022 X64;Release VS2022 X64;Debug DMC;Release DMC;Debug lcc64;Release lcc64;Debug BorlandC;Release BorlandC;Debug OW 32;Release OW 32;Debug OW 64;Release OW 64;Debug PELLES C;Release PELLES C;Debug PELLES C 64;Release PELLES C 64;Debug CLANG Mingw32;Release CLANG Mingw32;Debug CLANG Mingw64;Release CLANG Mingw64;Debug CLANG MSX32;Release CLANG MSX32;Debug CLANG MSX64;Release CLANG MSX64;Debug CLANG MSYS W32;Release CLANG MSYS W32;Debug CLANG MSYS W64;Release CLANG MSYS W64;" />
+		</VirtualTargets>
+		<Unit filename="altbuild/freeglut.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="include/GL/freeglut.h" />
+		<Unit filename="include/GL/freeglut_ext.h" />
+		<Unit filename="include/GL/freeglut_std.h" />
+		<Unit filename="include/GL/freeglut_ucall.h" />
+		<Unit filename="include/GL/glut.h" />
+		<Unit filename="src/fg_callback_macros.h" />
+		<Unit filename="src/fg_callbacks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_cursor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_ext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_font.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_font_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_gamemode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_geometry.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_gl2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_gl2.h" />
+		<Unit filename="src/fg_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_init.h" />
+		<Unit filename="src/fg_input_devices.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_internal.h" />
+		<Unit filename="src/fg_joystick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_overlay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_spaceball.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_state.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_stroke_mono_roman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_stroke_roman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_structure.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_teapot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_teapot_data.h" />
+		<Unit filename="src/fg_videoresize.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fg_window.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_cmap_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_cursor_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_display_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_ext_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_gamemode_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_init_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_input_devices_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_internal_mswin.h" />
+		<Unit filename="src/mswin/fg_joystick_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_main_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_menu_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_spaceball_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_state_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_structure_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mswin/fg_window_mswin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/util/xparsegeometry_repl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/util/xparsegeometry_repl.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

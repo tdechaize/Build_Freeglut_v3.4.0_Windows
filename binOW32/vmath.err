@@ -1,0 +1,3 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\vmath.inl(49): Warning! W202: Symbol 'quat_to_mat' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\vmath.inl(2): Warning! W202: Symbol 'v3_cons' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\vmath.inl(26): Warning! W202: Symbol 'quat_cons' has been defined, but not referenced

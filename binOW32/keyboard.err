@@ -1,0 +1,10 @@
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(143): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(143): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(152): Warning! W303: Parameter 'key' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(152): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(152): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(158): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(158): Warning! W303: Parameter 'x' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(164): Warning! W303: Parameter 'key' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(164): Warning! W303: Parameter 'y' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\progs\demos\keyboard\keyboard.c(164): Warning! W303: Parameter 'x' has been defined, but not referenced

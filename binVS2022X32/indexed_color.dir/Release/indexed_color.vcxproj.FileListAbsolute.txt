@@ -1,0 +1,2 @@
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\bin\Release\freeglut.dll
+C:\src\OpenGL\freeglut-3.4.0\binVS2022X32\indexed_color.dir\Release\indexed_.32D203FC.Up2Date

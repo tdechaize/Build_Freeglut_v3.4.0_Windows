@@ -1,0 +1,183 @@
+Open Watcom Linker Version 2.0 beta Nov  8 2023 01:50:13 (32-bit)
+Copyright (c) 2002-2023 The Open Watcom Contributors. All Rights Reserved.
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       24/04/02 15:24:42
+Executable Image: bin\spaceballd.exe
+creating a Windows NT character-mode executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+.idata                          00403000             000004e6
+DGROUP                          00404000             00001018
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE           AUTO           00401000        00000007
+_TEXT                  CODE           AUTO           00401010        00001041
+TRANSFER CODE          CODE           AUTO           00402054        0000010e
+.idata                 .idata         .idata         00403000        000004e6
+_NULL                  BEGDATA        DGROUP         00404000        00000004
+_AFTERNULL             BEGDATA        DGROUP         00404004        00000000
+CONST                  DATA           DGROUP         00404004        00000020
+CONST2                 DATA           DGROUP         00404024        00000000
+_DATA                  DATA           DGROUP         00404024        00000020
+XIB                    DATA           DGROUP         00404044        00000000
+XI                     DATA           DGROUP         00404044        00000018
+XIE                    DATA           DGROUP         0040405c        00000000
+YIB                    DATA           DGROUP         0040405c        00000000
+YI                     DATA           DGROUP         0040405c        0000000c
+YIE                    DATA           DGROUP         00404068        00000000
+TIB                    DATA           DGROUP         00404068        00000000
+TI                     DATA           DGROUP         00404068        00000000
+TIE                    DATA           DGROUP         00404068        00000000
+DATA                   DATA           DGROUP         00404068        00000000
+_BSS                   BSS            DGROUP         00405000        00000018
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: CMakeFiles\spaceball.dir\progs\demos\spaceball\spaceball.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\spaceball.c)
+004012ce       main_
+00401378+      disp_
+00401402+      draw_cube_
+004016eb+      reshape_
+00401795+      keyb_
+0040184c+      sbmot_
+004018b7+      sbrot_
+0040197f+      sbbut_
+00404024+      _pos
+00404030+      _rot
+Module: CMakeFiles\spaceball.dir\progs\demos\spaceball\vmath.c.obj(C:\src\OpenGL\freeglut-3.4.0\progs\demos\spaceball\vmath.c)
+00401ba9       quat_rotate_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(cstrtwnt)
+00401c62       _cstart_
+00401c62*      mainCRTStartup
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(fltuse80.c)
+00404040       _fltused_
+Module: C:\WATCOM\lib386\emu387.lib(386stub.asm)
+00401d00       __init_387_emulator
+00401d01*      __fini_387_emulator
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(argcv.c)
+00405000       __argv
+00405004       __argc
+00405008       ___argc
+0040500c       ___argv
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(main3wnt.c)
+00401d10       __NTMain
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(segdefns)
+00401003       ___begtext
+00404000*      __nullarea
+00404044       __Start_XI
+0040405c       __End_XI
+0040405c       __Start_YI
+00404068       __End_YI
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dsetefg.c)
+00401d50       __setEFGfmt_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dinitarg.c)
+00401f10       __Init_Argv_
+00401f70       __Fini_Argv_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(initrtns.c)
+00401fa0       __InitRtns
+00401ff0       __FiniRtns
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dcinit.c)
+00402050       __CommonInit_
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(dosseg)
+00001234       __DOSseg__
+Module: C:\WATCOM\lib386\nt\clbrdll.lib(histsplt.c)
+00405014       ___historical_splitparms
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+__CHK                               clbr20.dll
+tan_                                mt7r20.dll
+sqrt_                               mt7r20.dll
+__8087                              clbr20.dll
+sin_                                mt7r20.dll
+cos_                                mt7r20.dll
+_glutInit@8                         freeglutd.dll
+_glutInitDisplayMode@4              freeglutd.dll
+_glutCreateWindow@4                 freeglutd.dll
+_glutDisplayFunc@4                  freeglutd.dll
+_glutReshapeFunc@4                  freeglutd.dll
+_glutKeyboardFunc@4                 freeglutd.dll
+_glutSpaceballMotionFunc@4          freeglutd.dll
+_glutSpaceballRotateFunc@4          freeglutd.dll
+_glutSpaceballButtonFunc@4          freeglutd.dll
+_glEnable@4                         OPENGL32.DLL
+_glutMainLoop@0                     freeglutd.dll
+_glClear@4                          OPENGL32.DLL
+_glMatrixMode@4                     OPENGL32.DLL
+_glLoadIdentity@0                   OPENGL32.DLL
+_glTranslatef@12                    OPENGL32.DLL
+_glMultMatrixf@4                    OPENGL32.DLL
+_glutSwapBuffers@0                  freeglutd.dll
+_glBegin@4                          OPENGL32.DLL
+_glNormal3f@12                      OPENGL32.DLL
+_glColor3f@12                       OPENGL32.DLL
+_glVertex3f@12                      OPENGL32.DLL
+_glEnd@0                            OPENGL32.DLL
+_glViewport@16                      OPENGL32.DLL
+_glFrustum@48                       OPENGL32.DLL
+exit_                               clbr20.dll
+_glutPostRedisplay@0                freeglutd.dll
+_SetLD80bit_                        clbr20.dll
+__NewExceptionFilter_               clbr20.dll
+___process_fini                     clbr20.dll
+____Argv                            clbr20.dll
+____Argc                            clbr20.dll
+__get_EFG_Format_                   mt7r20.dll
+___EFG_printf                       clbr20.dll
+__get_EFG_cnvs2d_                   mt7r20.dll
+___EFG_scanf                        clbr20.dll
+malloc_                             clbr20.dll
+__LpCmdLine                         clbr20.dll
+__LpPgmName                         clbr20.dll
+free_                               clbr20.dll
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+C:\WATCOM\lib386\nt\opengl32.lib
+lib\freeglutd.lib
+C:\WATCOM\lib386\emu387.lib
+C:\WATCOM\lib386\nt\mt7rdll.lib
+C:\WATCOM\lib386\nt\clbrdll.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  2660 (9824.)
+Entry point address: 00401c62
+Link time: 00:00.62

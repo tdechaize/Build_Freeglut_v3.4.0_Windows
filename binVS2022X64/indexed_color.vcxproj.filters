@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\src\OpenGL\freeglut-3.4.0\progs\demos\indexed_color\idxcol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\src\OpenGL\freeglut-3.4.0\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BCB980B2-7E95-3EB8-B56B-2D59E986F2ED}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

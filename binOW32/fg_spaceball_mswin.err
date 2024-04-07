@@ -1,0 +1,6 @@
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_spaceball_mswin.c(109): Warning! W303: Parameter 'window' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_spaceball_mswin.c(114): Warning! W303: Parameter 'hwnd' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_spaceball_mswin.c(114): Warning! W303: Parameter 'lParam' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_spaceball_mswin.c(114): Warning! W303: Parameter 'wParam' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_spaceball_mswin.c(191): Warning! W202: Symbol 'state' has been defined, but not referenced
+C:\src\OpenGL\freeglut-3.4.0\src\mswin\fg_spaceball_mswin.c(123): Warning! W202: Symbol 'inputCode' has been defined, but not referenced
